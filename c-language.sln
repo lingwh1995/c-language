@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001_第一个C语言程序", "001_第一个C语言程序\001_第一个C语言程序.vcxproj", "{5DA0F2AF-142A-436A-973F-C56BD5C328CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002_进制转换", "002_进制转换\002_进制转换.vcxproj", "{DF22D9BF-1A88-4080-A0C4-59C7980551EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{5DA0F2AF-142A-436A-973F-C56BD5C328CC}.Release|x64.Build.0 = Release|x64
 		{5DA0F2AF-142A-436A-973F-C56BD5C328CC}.Release|x86.ActiveCfg = Release|Win32
 		{5DA0F2AF-142A-436A-973F-C56BD5C328CC}.Release|x86.Build.0 = Release|Win32
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Debug|x64.ActiveCfg = Debug|x64
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Debug|x64.Build.0 = Debug|x64
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Debug|x86.ActiveCfg = Debug|Win32
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Debug|x86.Build.0 = Debug|Win32
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Release|x64.ActiveCfg = Release|x64
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Release|x64.Build.0 = Release|x64
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Release|x86.ActiveCfg = Release|Win32
+		{DF22D9BF-1A88-4080-A0C4-59C7980551EA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
