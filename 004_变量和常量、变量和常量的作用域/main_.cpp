@@ -11,6 +11,7 @@
 *       const int cx;
 *       printf("未初始化的变量是一个随机值 = %d\n", cx);
 */
+
 #if 0
 int main()
 {

@@ -1,7 +1,6 @@
 # include <stdio.h>
 # include <stdbool.h>
 
-
 /**
  * 章节内容:
  *      C语言基本数据类型
@@ -10,6 +9,7 @@
  *          bool: 0/false、 1、true
  *          空类型(不属于基本数据类型): void
  */
+
 int main() {
     printf("char类型所占字节大小: %d\n", (int)sizeof(char));
     printf("short类型所占字节大小: %d\n", (int)sizeof(short));

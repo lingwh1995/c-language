@@ -25,14 +25,26 @@
  *				return 0;
  *			}
  *		#endif
- *
+ *  6.system函数
+ *		暂停程序		system("pause")
+ *		调用计算器	system("calc")
+ * 
  * MinGw
  *      https://sourceforge.net/projects/mingw-w64/
  * C语言参考网站
  *      https://zh.cppreference.com/w/
  *      https://cplusplus.com/
  */
+
+int main() {
+	system("calc");
+	system("pause");
+	return 0;
+}
+
+#if 0
 int main() {
 	printf("Hello world!");
 	return 0;
 }
+#endif // 0
