@@ -7,6 +7,7 @@
 *      double d; 本意是定义了一个double类型的变量d
 *      typedef double d; 转换后意思是给double这个数据类型起了一个别名,相当于把d由一个变量转换成为了一个类型
 *  3.typedef不是类似于宏定义的类型替换,只是给是类型的重命名,起一个别名而已
+*  4.typedef常和枚举和结构体结合使用
 */
 
 void TypeDefTest() {

@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 typedef char bool;
 #define false 0
 #define true 1

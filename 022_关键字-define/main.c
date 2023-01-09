@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 
 //´íÎó¶¨Òå
 //#define SUM(x,y) x*y
