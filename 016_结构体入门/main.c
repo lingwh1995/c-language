@@ -37,7 +37,9 @@ struct Student {
     char name[50];
     int age;
 };
-//此处定义的结构体变量为全局变量
+//错误定义结构体(下面一行代码放开会报错,因为没有在变量前加struct)
+//Student student_g;
+//正确定义结构体，此处定义的结构体变量为全局变量
 struct Student student_g;
 
 /**
@@ -59,16 +61,15 @@ void GolbalStructTest() {
     printf("测试在其他方法中使用全局结构体,user_g.age = %d\n", user_g.age);
 }
 
-int main() {
+int main() {    
     /**
      * 测试方式一定义的结构体
-     */
+     */      
+    //全局结构体部分
+        //定义结构体并初始化(定义一个全局结构体)
+    //struct User user_g = {"001","张三",20};
 
-     //全局结构体部分
-         //定义结构体并初始化(定义一个全局结构体)
-     //struct User user_g = {"001","张三",20};
-
-     //定义结构体并初始化(定义一个局部结构体)
+    //定义结构体并初始化(定义一个局部结构体)
     struct Student student = { "001","张三",20 };
     //普通方法访问结构体成员变量
     printf("id:%s\n", student.id);
@@ -89,11 +90,11 @@ int main() {
     printf("age:%d\n", pStudent->age);
 
     printf("------------------------------\n");
+
     /**
      * 测试方式二定义的结构体
      */
-
-     //给数组类型变量赋值使用strcpy()函数
+    //给数组类型变量赋值使用strcpy()函数
     strcpy(user_g.id, "002");
     strcpy(user_g.name, "lisi");
     user_g.age = 20;
