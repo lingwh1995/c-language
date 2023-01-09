@@ -24,6 +24,7 @@
  *	1.ASCII码形式输出: 将一个字符以ASCII码形式输出
  *  2.转义字符串输出: 输出转义后的字符
  * 
+ * 
  * 关于double类型数据的特殊处理:
  *	输出double类型,使用%f即可: 而scanf读取double类型,必须使用%lf防止精度丢失
  */
@@ -221,10 +222,6 @@ void AsciiPrintfAndEscapePrintfTest() {
 	printf("16进制的转义:\x13\n");
 }
 
-int main() {
-	
-	return 0;
-}
 
 //标准输入输出的基本测试
 #if 0

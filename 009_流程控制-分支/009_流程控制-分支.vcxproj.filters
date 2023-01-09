@@ -18,7 +18,7 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="practice.c">
+    <ClCompile Include="main_01.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

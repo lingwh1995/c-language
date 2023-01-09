@@ -10,7 +10,7 @@
 /*
  * while—≠ª∑≤‚ ‘
  */
-void WhileTest() {
+void WhileLoopTest() {
     int i = 0;
     while (i < 10) {
         printf("%d\n", i);
@@ -22,7 +22,7 @@ void WhileTest() {
 /*
  * do while—≠ª∑≤‚ ‘
  */
-void DoWhileTest() {
+void DoWhileLoopTest() {
     int i = 0;
     do {
         printf("%d\n", i);
@@ -33,7 +33,7 @@ void DoWhileTest() {
 /*
  * for—≠ª∑≤‚ ‘
  */
-void ForTest() {
+void ForLoopTest() {
     int i;
     for (i = 0; i < 10; i++) {
         printf("%d\n", i);
@@ -47,8 +47,10 @@ void ForTest() {
     printf("------------------\n");
 }
 
+#if 0
 int main() {
-    //WhileTest();
-    //DoWhileTest();
-    ForTest();
+    //WhileLoopTest();
+    //DoWhileLoopTest();
+    ForLoopTest();
 }
+#endif // 0

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 /*
  * 字符串: 
  *  1.在C语言中，没有字符串类型数据,可以使用特殊的字符数组来代替字符串,字符串实际上是使用空字符\0结尾的一维字符数组
@@ -49,8 +51,26 @@ void CharArrayTest() {
     printf("s2 = %s\n", s2);
 }
 
+/**
+ * 遍历字符数组的两种方式
+ */
+void ForeachCharOneDimensionalArrayTest() {
+    char str[] = { "hello" };
+    //遍历数组的方式1
+    for (int i = 0; i < strlen(str); i++) {
+        printf("%c\n", str[i]);
+        printf("%p\n", &str[i]);
+    }
+    //遍历数组的方式2
+    printf("-------------------------\n");
+    for (int i = 0; str[i] != '\0'; i++) {
+        printf("%c\n", str[i]);
+    }
+}
+
 int main() {
     //StrTest();
     //CharArrayTest();
+    ForeachCharOneDimensionalArrayTest();
 	return 0;
 }
