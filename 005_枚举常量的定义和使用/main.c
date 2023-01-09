@@ -4,6 +4,7 @@
 # define IN_WORD_MACRO 1
 # define OUT_WORD_MACRO 2
 # define END_MACRO 3
+
 /**
 * 枚举常的定义和使用(枚举也是一种常量)
 *   1.枚举常量的值只能是整形数据
@@ -29,6 +30,7 @@ int main() {
         OUT_WORD_ENUM,
         END_ENUM
     };
+
     printf("BEGIN_MACRO = %d\n", BEGIN_MACRO);
     printf("IN_WORD_MACRO = %d\n", IN_WORD_MACRO);
     printf("OUT_WORD_MACRO = %d\n", OUT_WORD_MACRO);
