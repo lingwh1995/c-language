@@ -129,10 +129,13 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="main_01.c" />
-    <ClCompile Include="mylib.c" />
+    <ClCompile Include="main_02.c" />
+    <ClCompile Include="mylib_1.c" />
+    <ClCompile Include="mylib_2.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mylib.h" />
+    <ClInclude Include="mylib_1.h" />
+    <ClInclude Include="mylib_2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,5 @@
-#ifndef MYLIB_H
-#define MYLIB_H
+#ifndef MYLIB_1_H
+#define MYLIB_1_H
 /*
  * 初始化数组
  * @param *arr 代表数组的指针
@@ -27,4 +27,4 @@ extern void BubbleSortV2(int* arr, int length);
  * @param length 数组长度
  */
 extern void PrintArrV2(int* arr, int length);
-#endif // !MYLIB_H
+#endif // !MYLIB_1_H

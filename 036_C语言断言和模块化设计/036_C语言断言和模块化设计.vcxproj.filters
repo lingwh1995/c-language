@@ -18,15 +18,24 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="mylib.c">
+    <ClCompile Include="mylib_1.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main_01.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="mylib_2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main_02.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mylib.h">
+    <ClInclude Include="mylib_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mylib_2.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
