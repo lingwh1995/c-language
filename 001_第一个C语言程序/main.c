@@ -36,15 +36,18 @@
  *      https://cplusplus.com/
  */
 
+#if 0
 int main() {
 	system("calc");
 	system("pause");
 	return 0;
 }
+#endif
 
 #if 0
+#endif
 int main() {
 	printf("Hello world!");
 	return 0;
 }
-#endif // 0
+
