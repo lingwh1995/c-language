@@ -24,6 +24,7 @@
     <ProjectGuid>{ae52211e-cfa3-4e0e-a4cb-c4e66412b9a3}</ProjectGuid>
     <RootNamespace>My003基本数据类型</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>006_基本数据类型</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
