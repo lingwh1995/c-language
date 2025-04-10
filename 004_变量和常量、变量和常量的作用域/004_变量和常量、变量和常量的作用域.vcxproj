@@ -22,9 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{7df4401d-49bf-4487-8158-2a912b61a0a2}</ProjectGuid>
-    <RootNamespace>My004变量和常量变量和常量的作用域</RootNamespace>
+    <RootNamespace>My005变量和常量变量和常量的作用域</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>005_变量和常量、变量和常量的作用域</ProjectName>
+    <ProjectName>004_变量和常量、变量和常量的作用域</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
