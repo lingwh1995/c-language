@@ -3,27 +3,28 @@
 #include <time.h>
 
 /**
- * Ëæ»úÊıºÍtime.h
+ * éšæœºæ•°å’Œtime.h
  */
 
  /**
-  * Î±Ëæ»úÊı,Ã¿´ÎÉú³ÉµÄËæ»úÊıÊÇÏàÍ¬µÄ
+  * ä¼ªéšæœºæ•°,æ¯æ¬¡ç”Ÿæˆçš„éšæœºæ•°æ˜¯ç›¸åŒçš„
   */
-void GetRandomNumber1() {
+void GetRandomNumber1()
+{
     int r = rand();
     printf("r = %d\n", r);
-    printf("ÇëÊäÈë:\n");
+    printf("è¯·è¾“å…¥:\n");
     int i = 0;
-    while (1) {
+    while (1)
+    {
         scanf("%d", &i);
-        if (i > r) {
-            printf("Äã²Â´óÁË,µ±Ç°ÊäÈëÖµ:%d\n", i);
-        }
-        else if (i < r) {
-            printf("Äã²ÂĞ¡ÁË,µ±Ç°ÊäÈëÖµ:%d\n", i);
-        }
-        else {
-            printf("Äã²ÂÕıÈ·ÁË,µ±Ç°ÊäÈëÖµ:%d\n", i);
+        if (i > r)
+        {
+            printf("ä½ çŒœå¤§äº†,å½“å‰è¾“å…¥å€¼:%d\n", i);
+        }else if (i < r) {
+            printf("ä½ çŒœå°äº†,å½“å‰è¾“å…¥å€¼:%d\n", i);
+        }else{
+            printf("ä½ çŒœæ­£ç¡®äº†,å½“å‰è¾“å…¥å€¼:%d\n", i);
             break;
         }
     }
@@ -31,24 +32,25 @@ void GetRandomNumber1() {
 
 
 /**
- * ÖÖ×ÓËæ»úÊı,Ã¿´ÎÉú³ÉµÄËæ»úÊıÊÇÏàÍ¬µÄ
+ * ç§å­éšæœºæ•°,æ¯æ¬¡ç”Ÿæˆçš„éšæœºæ•°æ˜¯ç›¸åŒçš„
  */
-void GetRandomNumber2() {
+void GetRandomNumber2()
+{
     srand((unsigned)time(NULL));
     int r = rand() % 10;
     printf("r = %d\n", r);
-    printf("ÇëÊäÈë:\n");
+    printf("è¯·è¾“å…¥:\n");
     int i = 0;
-    while (1) {
+    while (1)
+    {
         scanf("%d", &i);
-        if (i > r) {
-            printf("Äã²Â´óÁË,µ±Ç°ÊäÈëÖµ:%d\n", i);
-        }
-        else if (i < r) {
-            printf("Äã²ÂĞ¡ÁË,µ±Ç°ÊäÈëÖµ:%d\n", i);
-        }
-        else {
-            printf("Äã²ÂÕıÈ·ÁË,µ±Ç°ÊäÈëÖµ:%d\n", i);
+        if (i > r)
+        {
+            printf("ä½ çŒœå¤§äº†,å½“å‰è¾“å…¥å€¼:%d\n", i);
+        }else if (i < r) {
+            printf("ä½ çŒœå°äº†,å½“å‰è¾“å…¥å€¼:%d\n", i);
+        }else {
+            printf("ä½ çŒœæ­£ç¡®äº†,å½“å‰è¾“å…¥å€¼:%d\n", i);
             break;
         }
     }
@@ -56,12 +58,13 @@ void GetRandomNumber2() {
 
 
 /**
- * Éú³É10¸öËæ»úÊı
+ * ç”Ÿæˆ10ä¸ªéšæœºæ•°
  */
-void GetRandomNumber3() {
-    //³õÊ¼»¯Ëæ»úÊı
+void GetRandomNumber3()
+{
+    //åˆå§‹åŒ–éšæœºæ•°
     srand((unsigned)time(NULL));
-    //´òÓ¡³ö10¸öËæ»úÊı
+    //æ‰“å°å‡º10ä¸ªéšæœºæ•°
     for (int i = 0; i < 10; i++) {
         printf("%d\n", rand());
     }
@@ -69,32 +72,36 @@ void GetRandomNumber3() {
 
 
 /**
- * Éú³ÉÒ»¸ö0-1µÄËæ»úÊı
+ * ç”Ÿæˆä¸€ä¸ª0-1çš„éšæœºæ•°
  */
-void GetRandomNumber4() {
-    //³õÊ¼»¯Ëæ»úÊı
+void GetRandomNumber4()
+{
+    //åˆå§‹åŒ–éšæœºæ•°
     srand((unsigned)time(NULL));
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+    {
         printf("%.2f\n", rand() / 32767.0);
     }
 }
 
 
 /**
- * Éú³ÉÒ»¸ö1-10µÄËæ»úÊı
- * Ô­Àí:
- *  ÎåÎ»Êı:
+ * ç”Ÿæˆä¸€ä¸ª1-10çš„éšæœºæ•°
+ * åŸç†:
+ *  äº”ä½æ•°:
  *      10022 = 10 * 1002 + 2
  *      10022 % 10 = 2
- *  ÁùÎ»Êı:
+ *  å…­ä½æ•°:
  *      100022 = 10 * 10002 + 2
  *      100022 % 10 = 2
- *  ÓÃ100È¡Óà¿ÉÒÔµÃµ½×îºóÒ»Î»Êı,×îºóÒ»Î»ÊıµÄ·¶Î§Îª: 0-9,ËùÒÔ  rand()+1 µÄ·¶Î§ÊÇ 0-10
+ *  ç”¨100å–ä½™å¯ä»¥å¾—åˆ°æœ€åä¸€ä½æ•°,æœ€åä¸€ä½æ•°çš„èŒƒå›´ä¸º: 0-9,æ‰€ä»¥  rand()+1 çš„èŒƒå›´æ˜¯ 0-10
  */
-void GetRandomNumber5() {
-    //³õÊ¼»¯Ëæ»úÊı
+void GetRandomNumber5()
+{
+    //åˆå§‹åŒ–éšæœºæ•°
     srand((unsigned)time(NULL));
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+    {
         int r = rand();
         printf("rand() = %d, r = %d\n", r, r % 10 + 1);
     }
@@ -102,27 +109,30 @@ void GetRandomNumber5() {
 
 
 /**
- * Éú³ÉÒ»¸ö1-100µÄËæ»úÊı
- * Ô­Àí:
- *  ÎåÎ»Êı:
+ * ç”Ÿæˆä¸€ä¸ª1-100çš„éšæœºæ•°
+ * åŸç†:
+ *  äº”ä½æ•°:
  *      10022 = 100 * 100 + 22
  *      10022 % 100 = 22
- *  ÁùÎ»Êı:
+ *  å…­ä½æ•°:
  *      100022 = 1000 * 100 + 22
  *      100022 % 100 = 22
- *  ÓÃ100È¡Óà¿ÉÒÔµÃµ½×îºóÁ½Î»Êı,×îºóÁ½Î»ÊıµÄ·¶Î§Îª: 00-99,ËùÒÔ  rand()+1 µÄ·¶Î§ÊÇ 00-100
+ *  ç”¨100å–ä½™å¯ä»¥å¾—åˆ°æœ€åä¸¤ä½æ•°,æœ€åä¸¤ä½æ•°çš„èŒƒå›´ä¸º: 00-99,æ‰€ä»¥  rand()+1 çš„èŒƒå›´æ˜¯ 00-100
  */
-void GetRandomNumber6() {
-    //³õÊ¼»¯Ëæ»úÊı
+void GetRandomNumber6()
+{
+    //åˆå§‹åŒ–éšæœºæ•°
     srand((unsigned)time(NULL));
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+    {
         int r = rand();
         printf("rand() = %d, r = %d\n", r, r % 100 + 1);
     }
 }
 
 
-int main() {
+int main()
+{
     //GetRandomNumber1();
     //GetRandomNumber2();
     //GetRandomNumber3();

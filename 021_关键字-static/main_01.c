@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include "mylib.h"
 
-int main() {
-    //ÏÂÃæÈıĞĞ´úÂë·Å¿ª»á±¨´í
+int main()
+{
+    //ä¸‹é¢ä¸‰è¡Œä»£ç æ”¾å¼€ä¼šæŠ¥é”™
     /*
-    printf("ÆäËûÎÄ¼şÖĞµÄ¾²Ì¬È«¾Ö±äÁ¿: %d\n", gi_in_other_file_static);
-    printf("ÆäËûÎÄ¼şÖĞµÄ¾²Ì¬È«¾Ö³£Á¿: %d\n", gc_in_other_file_static);
+    printf("å…¶ä»–æ–‡ä»¶ä¸­çš„é™æ€å…¨å±€å˜é‡: %d\n", gi_in_other_file_static);
+    printf("å…¶ä»–æ–‡ä»¶ä¸­çš„é™æ€å…¨å±€å¸¸é‡: %d\n", gc_in_other_file_static);
     AddInOtherFileStatic(0, 0);
     */
 
-    printf("ÆäËûÎÄ¼şÖĞµÄ¾²Ì¬È«¾Ö±äÁ¿: %d\n", gi_in_other_file_ordinary);
-    printf("ÆäËûÎÄ¼şÖĞµÄ¾²Ì¬È«¾Ö³£Á¿: %d\n", gc_in_other_file_ordinary);
+    printf("å…¶ä»–æ–‡ä»¶ä¸­çš„é™æ€å…¨å±€å˜é‡: %d\n", gi_in_other_file_ordinary);
+    printf("å…¶ä»–æ–‡ä»¶ä¸­çš„é™æ€å…¨å±€å¸¸é‡: %d\n", gc_in_other_file_ordinary);
     AddInOtherFileOrdinary(0, 0);
 	return 0;
 }

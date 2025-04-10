@@ -2,15 +2,16 @@
 # include <ctype.h>
 
 /**
- * getchar()¡¢if-elseºÍctype.h
- *  ctype.h: ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÎª¿ØÖÆ×Ö·û¡¢Êı×Ö¡¢´óĞ´×ÖÄ¸¡¢Ğ¡Ğ´×ÖÄ¸
+ * getchar()ã€if-elseå’Œctype.h
+ *  ctype.h: åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦ä¸ºæ§åˆ¶å­—ç¬¦ã€æ•°å­—ã€å¤§å†™å­—æ¯ã€å°å†™å­—æ¯
  */
 
  /**
-  * ×Ô¼ºÊµÏÖÅĞ¶ÏÂß¼­
+  * è‡ªå·±å®ç°åˆ¤æ–­é€»è¾‘
   */
-void JudgeCharacterTypeTest1() {
-    printf("ÇëÊäÈëÒ»¸ö×Ö·û:\n");
+void JudgeCharacterTypeTest1()
+{
+    printf("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦:\n");
     char c = getchar();
     if (c < 32) {
         printf("this is a control char\n");
@@ -30,10 +31,11 @@ void JudgeCharacterTypeTest1() {
 }
 
 /**
- * µ÷ÓÃctype.hÊµÏÖÅĞ¶ÏÂß¼­
+ * è°ƒç”¨ctype.hå®ç°åˆ¤æ–­é€»è¾‘
  */
-void JudgeCharacterTypeTest2() {
-    printf("ÇëÊäÈëÒ»¸ö×Ö·û:\n");
+void JudgeCharacterTypeTest2()
+{
+    printf("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦:\n");
     char c = getchar();
     if (iscntrl(c)) {
         printf("this is a control char\n");
@@ -51,7 +53,8 @@ void JudgeCharacterTypeTest2() {
         printf("other char\n");
     }
 }
-int main() {
+int main()
+{
     //JudgeCharacterTypeTest1();
     JudgeCharacterTypeTest2();
     return 0;

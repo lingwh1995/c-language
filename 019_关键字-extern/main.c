@@ -2,68 +2,72 @@
 #include "mylib.h"
 
 /**
- * extern¹Ø¼ü×Ö:
- *	1.ÓÃÔÚÈ«¾Ö±äÁ¿»òÕßº¯ÊıÉùÃ÷Ç°,ÓÃÀ´ËµÃ÷´Ë ±äÁ¿/³£Á¿/º¯Êı ÊÇÔÚ±ğ´¦¶¨ÒåµÄ,ÒªÔÚ´Ë´¦ÒıÓÃ
- *  2.Ò»°ãµÄ ±äÁ¿/³£Á¿/º¯Êı ÊÇÏÈ¶¨ÒåºóÊ¹ÓÃ,Èç¹ûÒªÊµÏÖºó¶¨ÒåÏÈÊ¹ÓÃ¾ÍÒªÊ¹ÓÃextern¹Ø¼ü×ÖÉùÃ÷Ò»ÏÂ
- *  3.±¾ÎÄ¼şÖĞµÄ ±äÁ¿/³£Á¿/º¯Êı ¿ÉÒÔÖ±½ÓÉùÃ÷,Ò²¿ÉÒÔÊ¹ÓÃextern¹Ø¼ü×ÖÉùÃ÷,ÆäËûÎÄ¼şÖĞµÄ ±äÁ¿/³£Á¿/º¯Êı ĞèÒªÊ¹ÓÃexternÉùÃ÷
- *	4.externÉùÃ÷µÄ ±äÁ¿/³£Á¿£¬¿ÉÒÔÊÇÈ«¾ÖµÄ,Ò²¿ÉÒÔÊÇ¾Ö²¿µÄ
+ * externå…³é”®å­—:
+ *	1.ç”¨åœ¨å…¨å±€å˜é‡æˆ–è€…å‡½æ•°å£°æ˜å‰,ç”¨æ¥è¯´æ˜æ­¤ å˜é‡/å¸¸é‡/å‡½æ•° æ˜¯åœ¨åˆ«å¤„å®šä¹‰çš„,è¦åœ¨æ­¤å¤„å¼•ç”¨
+ *  2.ä¸€èˆ¬çš„ å˜é‡/å¸¸é‡/å‡½æ•° æ˜¯å…ˆå®šä¹‰åä½¿ç”¨,å¦‚æœè¦å®ç°åå®šä¹‰å…ˆä½¿ç”¨å°±è¦ä½¿ç”¨externå…³é”®å­—å£°æ˜ä¸€ä¸‹
+ *  3.æœ¬æ–‡ä»¶ä¸­çš„ å˜é‡/å¸¸é‡/å‡½æ•° å¯ä»¥ç›´æ¥å£°æ˜,ä¹Ÿå¯ä»¥ä½¿ç”¨externå…³é”®å­—å£°æ˜,å…¶ä»–æ–‡ä»¶ä¸­çš„ å˜é‡/å¸¸é‡/å‡½æ•° éœ€è¦ä½¿ç”¨externå£°æ˜
+ *	4.externå£°æ˜çš„ å˜é‡/å¸¸é‡ï¼Œå¯ä»¥æ˜¯å…¨å±€çš„,ä¹Ÿå¯ä»¥æ˜¯å±€éƒ¨çš„
  */
 
 /*
-//Ê¹ÓÃextern¹Ø¼ü×ÖÉùÃ÷¶¨ÒåÔÚ±¾ÎÄ¼şÖĞµÄ ±äÁ¿/³£Á¿/º¯Êı
-//ÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄÒ»¸öÈ«¾Ö±äÁ¿
+//ä½¿ç”¨externå…³é”®å­—å£°æ˜å®šä¹‰åœ¨æœ¬æ–‡ä»¶ä¸­çš„ å˜é‡/å¸¸é‡/å‡½æ•°
+//å£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ä¸€ä¸ªå…¨å±€å˜é‡
 extern int gi_in_current_file;
-//ÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄÒ»¸öÈ«¾Ö³£Á¿
+//å£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ä¸€ä¸ªå…¨å±€å¸¸é‡
 extern const int gc_in_current_file;
-//ÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄÒ»¸ö·½·¨
+//å£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ä¸€ä¸ªæ–¹æ³•
 extern int AddInCurrentFile(int, int);
 */
 
-//²»Ê¹ÓÃextern¹Ø¼ü×ÖÉùÃ÷¶¨ÒåÔÚ±¾ÎÄ¼şÖĞµÄ ±äÁ¿/³£Á¿/º¯Êı
-//ÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄÒ»¸öÈ«¾Ö±äÁ¿
+//ä¸ä½¿ç”¨externå…³é”®å­—å£°æ˜å®šä¹‰åœ¨æœ¬æ–‡ä»¶ä¸­çš„ å˜é‡/å¸¸é‡/å‡½æ•°
+//å£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ä¸€ä¸ªå…¨å±€å˜é‡
 int gi_in_current_file;
-//ÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄÒ»¸öÈ«¾Ö³£Á¿
+//å£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ä¸€ä¸ªå…¨å±€å¸¸é‡
 const int gc_in_current_file;
-//ÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄÒ»¸ö·½·¨
+//å£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ä¸€ä¸ªæ–¹æ³•
 int AddInCurrentFile(int, int);
 
 /*
- * ²âÊÔÊ¹ÓÃexternÉùÃ÷ÆäËûÎÄ¼şÖĞµÄ ±äÁ¿/³£Á¿/º¯Êı
+ * æµ‹è¯•ä½¿ç”¨externå£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ å˜é‡/å¸¸é‡/å‡½æ•°
  */
-void ExternOtherFileVariableAndConstAndFunctionTest() {
+void ExternOtherFileVariableAndConstAndFunctionTest()
+{
 	printf("gi_in_other_file = %d\n", gi_in_other_file);
 	printf("gc_in_other_file = %d\n", gc_in_other_file);
-	//AddInOtherFile()ÔÚmylib.hÖĞÊ¹ÓÃextern¹Ø¼ü×ÖÉùÃ÷,ÔÚmylib.cÖĞ¶¨Òå
+	//AddInOtherFile()åœ¨mylib.hä¸­ä½¿ç”¨externå…³é”®å­—å£°æ˜,åœ¨mylib.cä¸­å®šä¹‰
 	AddInOtherFile(0, 0);
 }
 
 /*
- * ²âÊÔÊ¹ÓÃexternÉùÃ÷µ±Ç°ÎÄ¼şÖĞµÄ ±äÁ¿/³£Á¿/º¯Êı
+ * æµ‹è¯•ä½¿ç”¨externå£°æ˜å½“å‰æ–‡ä»¶ä¸­çš„ å˜é‡/å¸¸é‡/å‡½æ•°
  */
-void ExternCurrentFileVariableAndConstAndFunctionTest() {
+void ExternCurrentFileVariableAndConstAndFunctionTest()
+{
 	printf("gi_in_current_file = %d\n", gi_in_current_file);
 	printf("gc_in_current_file = %d\n", gc_in_current_file);
-	//AddInCurrentFile()ÔÚmain.cÖĞÊ¹ÓÃextern¹Ø¼ü×ÖÉùÃ÷,ÔÚmain.cÖĞ¶¨Òå
+	//AddInCurrentFile()åœ¨main.cä¸­ä½¿ç”¨externå…³é”®å­—å£°æ˜,åœ¨main.cä¸­å®šä¹‰
 	AddInCurrentFile(0, 0);
 }
 
 #if 0
-int main() {
+int main()
+{
 	ExternOtherFileVariableAndConstAndFunctionTest();
-	//Ö±½Óµ÷ÓÃ»á±¨´í,ÒòÎªÕâ¸öº¯ÊıÖĞµ÷ÓÃµÄ±äÁ¿¡¢³£Á¿ºÍ·½·¨¶¼¶¨ÒåÔÚÏÂÃæ,Í¬ÑùĞèÒªÔÚµ±Ç°ÎÄ¼şÖĞÊ¹ÓÃexternÉùÃ÷
+	//ç›´æ¥è°ƒç”¨ä¼šæŠ¥é”™,å› ä¸ºè¿™ä¸ªå‡½æ•°ä¸­è°ƒç”¨çš„å˜é‡ã€å¸¸é‡å’Œæ–¹æ³•éƒ½å®šä¹‰åœ¨ä¸‹é¢,åŒæ ·éœ€è¦åœ¨å½“å‰æ–‡ä»¶ä¸­ä½¿ç”¨externå£°æ˜
 	ExternCurrentFileVariableAndConstAndFunctionTest();
 	return 0;
 }
 #endif // 0
 
-//¶¨ÒåÒ»¸öÈ«¾Ö±äÁ¿
+//å®šä¹‰ä¸€ä¸ªå…¨å±€å˜é‡
 int gi_in_current_file = 10;
 
-//¶¨ÒåÒ»¸öÈ«¾Ö³£Á¿
+//å®šä¹‰ä¸€ä¸ªå…¨å±€å¸¸é‡
 const int gc_in_current_file = 100;
 
-//¶¨ÒåÒ»¸öº¯Êı
-int AddInCurrentFile(int a, int b) {
-	printf("ÎÒÊÇmain.cÖĞµÄÆÕÍ¨º¯Êı......(À´×Ôµ±Ç°ÎÄ¼ş)\n");
+//å®šä¹‰ä¸€ä¸ªå‡½æ•°
+int AddInCurrentFile(int a, int b)
+{
+	printf("æˆ‘æ˜¯main.cä¸­çš„æ™®é€šå‡½æ•°......(æ¥è‡ªå½“å‰æ–‡ä»¶)\n");
 	return a + b;
 }

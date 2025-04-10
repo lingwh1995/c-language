@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * Ñ­»·´òÓ¡a-g
- *  ²»Ê¹ÓÃÈ¡Ä£ÊµÏÖ
+ * å¾ªç¯æ‰“å°a-g
+ *  ä¸ä½¿ç”¨å–æ¨¡å®ç°
  */
 void PrintAToG1() {
     char str[] = "abcdefg";
@@ -21,8 +21,8 @@ void PrintAToG1() {
 }
 
 /**
- * Ñ­»·´òÓ¡a-g
- *  Ê¹ÓÃÈ¡Ä£ÊµÏÖ
+ * å¾ªç¯æ‰“å°a-g
+ *  ä½¿ç”¨å–æ¨¡å®ç°
  */
 void PrintAToG2() {
     char str[] = "abcdefg";
@@ -38,20 +38,20 @@ void PrintAToG2() {
 }
 
 /**
- * ËÀÑ­»·
+ * æ­»å¾ªç¯
  */
 void DeadLoopTest1() {
     for (;;) {
-        printf("ËÀÑ­»·\n");
+        printf("æ­»å¾ªç¯\n");
     }
 }
 
 /**
- * ËÀÑ­»·
+ * æ­»å¾ªç¯
  */
 void DeadLoopTest2() {
     while (1) {
-        printf("ËÀÑ­»·\n");
+        printf("æ­»å¾ªç¯\n");
     }
 }
 

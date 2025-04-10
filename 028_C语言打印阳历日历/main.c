@@ -2,7 +2,7 @@
 # include <stdbool.h>
 
 /**
- * ÅĞ¶ÏÊÇ·ñÎªÈòÄê
+ * åˆ¤æ–­æ˜¯å¦ä¸ºé—°å¹´
  * @param year
  * @return
  */
@@ -16,7 +16,7 @@ int IsLeapYear(int year) {
 
 
 /**
- * ÅĞ¶ÏÄ³¸öÔÂÓĞ¶àÉÙÌì,ÈòÄê 2ÔÂ29Ìì,Æ½Äê2ÔÂ28Ìì
+ * åˆ¤æ–­æŸä¸ªæœˆæœ‰å¤šå°‘å¤©,é—°å¹´ 2æœˆ29å¤©,å¹³å¹´2æœˆ28å¤©
  * @return
  */
 int GetDays(int year, int month) {
@@ -48,15 +48,15 @@ int GetDays(int year, int month) {
 
 
 /**
- * ²ÌÀÕ¹«Ê½: ¸ù¾İÄêÔÂÈÕÇó¾ßÌåµÄÄ³Ò»ÌìÊÇĞÇÆÚ¼¸
- * @param year Äê
- * @param month ÔÂ
- * @param day ÈÕ
+ * è”¡å‹’å…¬å¼: æ ¹æ®å¹´æœˆæ—¥æ±‚å…·ä½“çš„æŸä¸€å¤©æ˜¯æ˜ŸæœŸå‡ 
+ * @param year å¹´
+ * @param month æœˆ
+ * @param day æ—¥
  * @return
  */
 int getDayOfWeek(int year, int month, int day) {
     int c, y, week;
-    //ÅĞ¶ÏmonthÊÇ·ñÎª1»ò2¡¡
+    //åˆ¤æ–­monthæ˜¯å¦ä¸º1æˆ–2ã€€
     if (month == 1 || month == 2) {
         year--;
         month += 12;
@@ -75,21 +75,21 @@ int getDayOfWeek(int year, int month, int day) {
 
 
 /**
- * ´òÓ¡Ä³Ò»¸öÔÂµÄÈÕÀú
- * @param day Õâ¸öÔÂ×Ü¹²ÓĞ¶àÉÙÌì
- * @param wk  Õâ¸öÔÂµÄµÚ1ÌìÊÇĞÇÆÚ¼¸
+ * æ‰“å°æŸä¸€ä¸ªæœˆçš„æ—¥å†
+ * @param day è¿™ä¸ªæœˆæ€»å…±æœ‰å¤šå°‘å¤©
+ * @param wk  è¿™ä¸ªæœˆçš„ç¬¬1å¤©æ˜¯æ˜ŸæœŸå‡ 
  */
 void PrintCalendar(int year) {
-    //µ±Ç°Äê·İ
+    //å½“å‰å¹´ä»½
     for (int i = 1; i <= 12; i++) {
-        //¸ù¾İÄê·İºÍÔÂ·İ»ñÈ¡¸ÃÔÂÓĞ¶àÉÙÌì
+        //æ ¹æ®å¹´ä»½å’Œæœˆä»½è·å–è¯¥æœˆæœ‰å¤šå°‘å¤©
         int days = GetDays(year, i);
-        //Çóµ±Ç°ÔÂµÚÒ»ÌìÊÇĞÇÆÚ¼¸
+        //æ±‚å½“å‰æœˆç¬¬ä¸€å¤©æ˜¯æ˜ŸæœŸå‡ 
         int week = getDayOfWeek(year, i, 1);
         int k = 0;
-        printf("   Äê·İ:%d     ÔÂ·İ:%d\n", year, i);
+        printf("   å¹´ä»½:%d     æœˆä»½:%d\n", year, i);
         printf("   ---------------------------------\n");
-        printf("   ÈÕ   Ò»   ¶ş   Èı   ËÄ   Îå   Áù\n");
+        printf("   æ—¥   ä¸€   äºŒ   ä¸‰   å››   äº”   å…­\n");
         char str[] = { "     " };
         for (int j = 0; j < week; j++) {
             printf("%s", str);
@@ -108,7 +108,7 @@ void PrintCalendar(int year) {
 
 
 int main() {
-    //ÊäÈëÄê·İ
+    //è¾“å…¥å¹´ä»½
     int year = 2022;
     PrintCalendar(year);
 }

@@ -1,26 +1,28 @@
 #include <stdio.h>
 #include "mylib.h"
 
-//¶¨ÒåÒ»¸ö±»staticĞŞÊÎµÄÈ«¾Ö±äÁ¿
+//å®šä¹‰ä¸€ä¸ªè¢«staticä¿®é¥°çš„å…¨å±€å˜é‡
 static int gi_in_other_file_static = 10;
 
-//¶¨ÒåÒ»¸ö±»staticĞŞÊÎµÄÈ«¾Ö³£Á¿
+//å®šä¹‰ä¸€ä¸ªè¢«staticä¿®é¥°çš„å…¨å±€å¸¸é‡
 static const int gc_in_other_file_static = 100;
 
-//¶¨ÒåÒ»¸ö±»staticĞŞÊÎµÄº¯Êı
-static int AddInOtherFileStatic(int a, int b) {
-    printf("ÎÒÊÇmylib.cÖĞµÄÆÕÍ¨º¯Êı......(À´×ÔÆäËûÎÄ¼ş,±»staticĞŞÊÎ)\n");
+//å®šä¹‰ä¸€ä¸ªè¢«staticä¿®é¥°çš„å‡½æ•°
+static int AddInOtherFileStatic(int a, int b)
+{
+    printf("æˆ‘æ˜¯mylib.cä¸­çš„æ™®é€šå‡½æ•°......(æ¥è‡ªå…¶ä»–æ–‡ä»¶,è¢«staticä¿®é¥°)\n");
     return a + b;
 }
 
-//¶¨ÒåÒ»¸öÃ»ÓĞ±»staticĞŞÊÎµÄÈ«¾Ö±äÁ¿
+//å®šä¹‰ä¸€ä¸ªæ²¡æœ‰è¢«staticä¿®é¥°çš„å…¨å±€å˜é‡
 int gi_in_other_file_ordinary = 10;
 
-//¶¨ÒåÒ»¸öÃ»ÓĞ±»staticĞŞÊÎµÄÈ«¾Ö³£Á¿
+//å®šä¹‰ä¸€ä¸ªæ²¡æœ‰è¢«staticä¿®é¥°çš„å…¨å±€å¸¸é‡
 const int gc_in_other_file_ordinary = 100;
 
-//¶¨ÒåÒ»¸öÃ»ÓĞ±»staticĞŞÊÎµÄº¯Êı
-int AddInOtherFileOrdinary(int a, int b) {
-    printf("ÎÒÊÇmylib.cÖĞµÄÆÕÍ¨º¯Êı......(À´×ÔÆäËûÎÄ¼ş,Ã»ÓĞ±»staticĞŞÊÎ)\n");
+//å®šä¹‰ä¸€ä¸ªæ²¡æœ‰è¢«staticä¿®é¥°çš„å‡½æ•°
+int AddInOtherFileOrdinary(int a, int b)
+{
+    printf("æˆ‘æ˜¯mylib.cä¸­çš„æ™®é€šå‡½æ•°......(æ¥è‡ªå…¶ä»–æ–‡ä»¶,æ²¡æœ‰è¢«staticä¿®é¥°)\n");
     return a + b;
 }

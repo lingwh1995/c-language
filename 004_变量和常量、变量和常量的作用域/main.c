@@ -20,7 +20,8 @@ int g = 1;
 //定义全局常量(未初始化的时候值默认为0,c语言中允许定义,c++中不允许定义,因为c++中更为严谨)
 const int cg;
 
-int main() {
+int main()
+{
     /**
      * 局部变量
      */
@@ -126,7 +127,8 @@ int main() {
      * 枚举常量(枚举也是一种常量)
      *  注意:枚举常量的值只能是整形数据
      */
-    enum sex {
+    enum sex
+    {
         MALE,//男性
         FEMALE,//女性
         SECRET//保密
@@ -135,7 +137,8 @@ int main() {
     printf("FEMALE = %d\n", FEMALE);
     printf("SECRET = %d\n", SECRET);
 
-    enum week {
+    enum week
+    {
         MON = 1,
         TUE = 2,
         WED = 3
@@ -146,7 +149,8 @@ int main() {
     wk = TUE;
     printf("%d\n", wk);
 
-    enum animal {
+    enum animal
+    {
         DOG = 5,
         CAT,
         SHEEP

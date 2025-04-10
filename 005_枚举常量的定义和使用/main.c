@@ -12,7 +12,8 @@
 */
 
 //使用枚举实现和宏定义同样的效果
-int main() {
+int main()
+{
     //枚举默认从0开始
     /*
     enum state {
@@ -24,7 +25,8 @@ int main() {
     */
 
     //修改枚举默认开始值为100
-    enum state {
+    enum state
+    {
         BEGIN_ENUM = 100,
         IN_WORD_ENUM,
         OUT_WORD_ENUM,
@@ -45,7 +47,8 @@ int main() {
 
 //枚举常量的定义和使用
 #if 0
-int main() {
+int main()
+{
     enum sex {
         MALE,//男性
         FEMALE,//女性
@@ -55,7 +58,8 @@ int main() {
     printf("FEMALE = %d\n", FEMALE);
     printf("SECRET = %d\n", SECRET);
 
-    enum week {
+    enum week
+    {
         MON = 1,
         TUE = 2,
         WED = 3
@@ -66,7 +70,8 @@ int main() {
     wk = TUE;
     printf("%d\n", wk);
 
-    enum animal {
+    enum animal
+    {
         DOG = 5,
         CAT,
         SHEEP

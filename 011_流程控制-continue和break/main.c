@@ -1,11 +1,13 @@
 #include <stdio.h>
 
  /**
-  * break²âÊÔ
-  *  Ìø³öµ±Ç°Ñ­»·
+  * breakæµ‹è¯•
+  *  è·³å‡ºå½“å‰å¾ªç¯
   */
-void BreakTest() {
-    for (int i = 0; i < 10; i++) {
+void BreakTest()
+{
+    for (int i = 0; i < 10; i++)
+    {
         if (i == 5) {
             break;
         }
@@ -15,11 +17,13 @@ void BreakTest() {
 
 
 /**
- * continue²âÊÔ
- *  Õı³£Ê¹ÓÃcontinue
+ * continueæµ‹è¯•
+ *  æ­£å¸¸ä½¿ç”¨continue
  */
-void ContinueTest1() {
-    for (int i = 0; i < 10; i++) {
+void ContinueTest1()
+{
+    for (int i = 0; i < 10; i++)
+    {
         if (i == 5) {
             continue;
         }
@@ -29,14 +33,16 @@ void ContinueTest1() {
 
 
 /**
- * continue²âÊÔ
- *  Õı³£Ê¹ÓÃcontinue,×¢Òâi++µÄÎ»ÖÃ
+ * continueæµ‹è¯•
+ *  æ­£å¸¸ä½¿ç”¨continue,æ³¨æ„i++çš„ä½ç½®
  */
-void ContinueTest2() {
-    for (int i = 0; i < 10; ) {
+void ContinueTest2()
+{
+    for (int i = 0; i < 10; )
+    {
         i++;
         if (i == 5) {
-            printf("ËÀÑ­»·...\n");
+            printf("æ­»å¾ªç¯...\n");
             continue;
         }
         printf("i = %d\n", i);
@@ -45,16 +51,19 @@ void ContinueTest2() {
 
 
 /**
- * continue²âÊÔ
- *  ÔÚforÑ­»·ÖĞÌø³öµ±Ç°Ñ­»·Êµ¼ÊÉÏÊÇÌøµ½forÑ­»·µÄµÚÈı¸ö±í´ïÊ½ÉÏ,
- *      ËùÒÔ¿´ÆğÀ´Ğ§¹ûºÍbreakÏàÍ¬,µ«Êµ¼ÊÉÏÊÇ½øÈëÁËËÀÑ­»·ÖĞ
- *  ×¢Òâi++µÄÎ»ÖÃ
+ * continueæµ‹è¯•
+ *  åœ¨forå¾ªç¯ä¸­è·³å‡ºå½“å‰å¾ªç¯å®é™…ä¸Šæ˜¯è·³åˆ°forå¾ªç¯çš„ç¬¬ä¸‰ä¸ªè¡¨è¾¾å¼ä¸Š,
+ *      æ‰€ä»¥çœ‹èµ·æ¥æ•ˆæœå’Œbreakç›¸åŒ,ä½†å®é™…ä¸Šæ˜¯è¿›å…¥äº†æ­»å¾ªç¯ä¸­
+ *  æ³¨æ„i++çš„ä½ç½®
  *
  */
-void ContinueTest3() {
-    for (int i = 0; i < 10; ) {
-        if (i == 5) {
-            printf("ËÀÑ­»·...\n");
+void ContinueTest3()
+{
+    for (int i = 0; i < 10; )
+    {
+        if (i == 5)
+        {
+            printf("æ­»å¾ªç¯...\n");
             continue;
         }
         i++;
@@ -64,14 +73,17 @@ void ContinueTest3() {
 
 
 /**
- * continue²âÊÔ
- *  Õı³£Ê¹ÓÃcontinue
+ * continueæµ‹è¯•
+ *  æ­£å¸¸ä½¿ç”¨continue
  */
-void ContinueTest4() {
+void ContinueTest4()
+{
     int n = 0;
-    while (n < 10) {
+    while (n < 10)
+    {
         n++;
-        if (n == 5) {
+        if (n == 5)
+        {
             continue;
         }
         printf("n = %d\n", n);
@@ -80,16 +92,18 @@ void ContinueTest4() {
 
 
 /**
- * continue²âÊÔ
- *  ÔÚforÑ­»·ÖĞÌø³öµ±Ç°Ñ­»·Êµ¼ÊÉÏÊÇÌøµ½whileÑ­»·µÄ±í´ïÊ½ÉÏ,
- *  ËùÒÔ¿´ÆğÀ´Ğ§¹ûºÍbreakÏàÍ¬,µ«ÊÇÊµ¼ÊÉÏÊÇËÀÑ­»·
+ * continueæµ‹è¯•
+ *  åœ¨forå¾ªç¯ä¸­è·³å‡ºå½“å‰å¾ªç¯å®é™…ä¸Šæ˜¯è·³åˆ°whileå¾ªç¯çš„è¡¨è¾¾å¼ä¸Š,
+ *  æ‰€ä»¥çœ‹èµ·æ¥æ•ˆæœå’Œbreakç›¸åŒ,ä½†æ˜¯å®é™…ä¸Šæ˜¯æ­»å¾ªç¯
  *
  */
 void ContinueTest5() {
     int m = 0;
-    while (m < 10) {
-        if (m == 5) {
-            printf("ËÀÑ­»·...\n");
+    while (m < 10)
+    {
+        if (m == 5)
+        {
+            printf("æ­»å¾ªç¯...\n");
             continue;
         }
         m++;
@@ -98,7 +112,8 @@ void ContinueTest5() {
 }
 
 
-int main() {
+int main()
+{
     //BreakTest();
     //ContinueTest1();
     //ContinueTest2();

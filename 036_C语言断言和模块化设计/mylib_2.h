@@ -1,38 +1,38 @@
 #ifndef MYLIB_2_H
 #define MYLIB_2_H
 /*
- * ´ÓÊı×éÖĞ²éÕÒµ±Ç°Öµ,²éÕÒµ½·µ»ØÊı×éË÷Òı,²éÕÒ²»µ½·µ»Ø-1
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param n µ±Ç°ÔªËØÔÚÄ¿±êÊı×éÖĞµÄË÷Òı
- * @param num ÒªÈ·¶¨ÊÇ·ñ´æÔÚÓÚµ±Ç°Êı×éÖĞµÄÖµ
+ * ä»æ•°ç»„ä¸­æŸ¥æ‰¾å½“å‰å€¼,æŸ¥æ‰¾åˆ°è¿”å›æ•°ç»„ç´¢å¼•,æŸ¥æ‰¾ä¸åˆ°è¿”å›-1
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param n å½“å‰å…ƒç´ åœ¨ç›®æ ‡æ•°ç»„ä¸­çš„ç´¢å¼•
+ * @param num è¦ç¡®å®šæ˜¯å¦å­˜åœ¨äºå½“å‰æ•°ç»„ä¸­çš„å€¼
  */
 int FindValueV3(const* arr, int n, int num);
 
 /*
- * ³õÊ¼»¯Êı×é
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * åˆå§‹åŒ–æ•°ç»„
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
 extern void InitArrV3(int* arr, int length);
 
 /*
- * ½»»»Á½¸öÊı
- * @param *ap ´ú±íµÚÒ»¸öÊıµÄÖ¸Õë
- * @param *bp ´ú±íµÚ¶ş¸öÊıµÄÖ¸Õë
+ * äº¤æ¢ä¸¤ä¸ªæ•°
+ * @param *ap ä»£è¡¨ç¬¬ä¸€ä¸ªæ•°çš„æŒ‡é’ˆ
+ * @param *bp ä»£è¡¨ç¬¬äºŒä¸ªæ•°çš„æŒ‡é’ˆ
  */
 extern void SwapV3(int* ap, int* bp);
 
 /*
- * Ã°ÅİÅÅĞò
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * å†’æ³¡æ’åº
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
 extern void BubbleSortV3(int* arr, int length);
 
 /*
- * ´òÓ¡Êı×é
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * æ‰“å°æ•°ç»„
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
 extern void PrintArrV3(int* arr, int length);
 #endif // !MYLIB_2_H

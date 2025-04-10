@@ -1,17 +1,19 @@
 #include <stdio.h>
 
-typedef enum bool {
+typedef enum bool
+{
     false,
     true
 } bool;
 
 /*
- * 使用枚举+typedef实现自定义bool
+ * 浣跨敤鏋氫妇+typedef瀹炵幇鑷畾涔塨ool
  */
-int main() {
+int main()
+{
     bool b = true;
     while (b) {
-        printf("为真...\n");
+        printf("涓虹湡...\n");
     }
     return 0;
 }

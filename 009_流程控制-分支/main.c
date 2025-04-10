@@ -2,18 +2,19 @@
 #include <stdio.h>
 
 /*
- * µ¥·ÖÖ§
+ * å•åˆ†æ”¯
  *	if else
- * ¶à·ÖÖ§
+ * å¤šåˆ†æ”¯
  *  switch
- * ÈýÔª±í´ïÊ½
+ * ä¸‰å…ƒè¡¨è¾¾å¼
  */
 
 /*
- * µ¥·ÖÖ§²âÊÔ
+ * å•åˆ†æ”¯æµ‹è¯•
  */
-void SingleBranchTest() {
-    printf("ÇëÊäÈëiºÍjµÄÖµ,Ê¹ÓÃ¿Õ¸ñ¸ô¿ª:\n");
+void SingleBranchTest()
+{
+    printf("è¯·è¾“å…¥iå’Œjçš„å€¼,ä½¿ç”¨ç©ºæ ¼éš”å¼€:\n");
     int i, j, max;
     scanf("%d %d", &i, &j);
     if (i > j) {
@@ -22,51 +23,54 @@ void SingleBranchTest() {
     else {
         max = j;
     }
-    printf("Á½¸öÖµÖÐ×î´óµÄÖµ max = %d\n", max);
+    printf("ä¸¤ä¸ªå€¼ä¸­æœ€å¤§çš„å€¼ max = %d\n", max);
 }
 
 /*
- * ¶à·ÖÖ§²âÊÔ
+ * å¤šåˆ†æ”¯æµ‹è¯•
  */
-void MultipleBranchTest() {
-    printf("ÇëÊäÈëiµÄÖµ:\n");
+void MultipleBranchTest()
+{
+    printf("è¯·è¾“å…¥içš„å€¼:\n");
     int i;
     scanf("%d",&i);
     switch (i) {
         case 1:
-            printf("ÄúÊäÈëµÄÖµÊÇ: %d", 1);
+            printf("æ‚¨è¾“å…¥çš„å€¼æ˜¯: %d", 1);
             break;
         case 2:
-            printf("ÄúÊäÈëµÄÖµÊÇ: %d", 2);
+            printf("æ‚¨è¾“å…¥çš„å€¼æ˜¯: %d", 2);
             break;
         case 3:
-            printf("ÄúÊäÈëµÄÖµÊÇ: %d", 3);
+            printf("æ‚¨è¾“å…¥çš„å€¼æ˜¯: %d", 3);
             break;
         case 4:
-            printf("ÄúÊäÈëµÄÖµÊÇ: %d", 4);
+            printf("æ‚¨è¾“å…¥çš„å€¼æ˜¯: %d", 4);
             break;
         case 5:
-            printf("ÄúÊäÈëµÄÖµÊÇ: %d", 5);
+            printf("æ‚¨è¾“å…¥çš„å€¼æ˜¯: %d", 5);
             break;
         default:
-            printf("ÄúÊäÈëµÄÖµÊÇÆäËûÖµ!");
+            printf("æ‚¨è¾“å…¥çš„å€¼æ˜¯å…¶ä»–å€¼!");
             break;
     }
 }
 
 /*
- * ÈýÔª±í´ïÊ½²âÊÔ
+ * ä¸‰å…ƒè¡¨è¾¾å¼æµ‹è¯•
  */
-void TernaryExpression() {
-    printf("ÇëÊäÈëiºÍjµÄÖµ,Ê¹ÓÃ¿Õ¸ñ¸ô¿ª:\n");
+void TernaryExpression()
+{
+    printf("è¯·è¾“å…¥iå’Œjçš„å€¼,ä½¿ç”¨ç©ºæ ¼éš”å¼€:\n");
     int i, j, max;
     scanf("%d %d", &i, &j);
     max = i > j ? i : j;
-    printf("Á½¸öÖµÖÐ×î´óµÄÖµ max = %d\n", max);
+    printf("ä¸¤ä¸ªå€¼ä¸­æœ€å¤§çš„å€¼ max = %d\n", max);
 }
 
 #if 0
-int main() {
+int main()
+{
     //SingleBranchTest();
     //MultipleBranchTest();
     TernaryExpression();

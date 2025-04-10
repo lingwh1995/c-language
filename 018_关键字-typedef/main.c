@@ -2,35 +2,36 @@
 
 /**
 * typedef:
-*  1.CÓïÑÔÔÊĞíÎªÒ»¸öÊı¾İÀàĞÍÆğÒ»¸öĞÂµÄ±ğÃû.Ëü±¾ÉíÊÇÒ»ÖÖ´æ´¢ÀàµÄ¹Ø¼ü×Ö,Óëauto¡¢extern¡¢mutable¡¢static¡¢registerµÈ¹Ø¼ü×Ö²»ÄÜÍ¬Ê±³öÏÖÔÚÒ»¸ö±í´ïÊ½ÖĞ
-*  2.¸øÒÑÓĞµÄÀàĞÍÆğÒ»¸ö±ğÃûµÄ,ÎÒÃÇ¿ÉÒÔ°ÑÒ»ÇĞºÏ·¨µÄ¶¨ÒåµÄ±äÁ¿(ÆÕÍ¨Êı¾İÀàĞÍµÄ±äÁ¿/Ö¸Õë±äÁ¿)×ª»»ÎªÀàĞÍ,Èç:
-*      double d; ±¾ÒâÊÇ¶¨ÒåÁËÒ»¸ödoubleÀàĞÍµÄ±äÁ¿d
-*      typedef double d; ×ª»»ºóÒâË¼ÊÇ¸ødoubleÕâ¸öÊı¾İÀàĞÍÆğÁËÒ»¸ö±ğÃû,Ïàµ±ÓÚ°ÑdÓÉÒ»¸ö±äÁ¿×ª»»³ÉÎªÁËÒ»¸öÀàĞÍ
-*  3.typedef²»ÊÇÀàËÆÓÚºê¶¨ÒåµÄÀàĞÍÌæ»»,Ö»ÊÇ¸øÊÇÀàĞÍµÄÖØÃüÃû,ÆğÒ»¸ö±ğÃû¶øÒÑ
-*  4.typedef³£ºÍÃ¶¾ÙºÍ½á¹¹Ìå½áºÏÊ¹ÓÃ
+*  1.Cè¯­è¨€å…è®¸ä¸ºä¸€ä¸ªæ•°æ®ç±»å‹èµ·ä¸€ä¸ªæ–°çš„åˆ«å.å®ƒæœ¬èº«æ˜¯ä¸€ç§å­˜å‚¨ç±»çš„å…³é”®å­—,ä¸autoã€externã€mutableã€staticã€registerç­‰å…³é”®å­—ä¸èƒ½åŒæ—¶å‡ºç°åœ¨ä¸€ä¸ªè¡¨è¾¾å¼ä¸­
+*  2.ç»™å·²æœ‰çš„ç±»å‹èµ·ä¸€ä¸ªåˆ«åçš„,æˆ‘ä»¬å¯ä»¥æŠŠä¸€åˆ‡åˆæ³•çš„å®šä¹‰çš„å˜é‡(æ™®é€šæ•°æ®ç±»å‹çš„å˜é‡/æŒ‡é’ˆå˜é‡)è½¬æ¢ä¸ºç±»å‹,å¦‚:
+*      double d; æœ¬æ„æ˜¯å®šä¹‰äº†ä¸€ä¸ªdoubleç±»å‹çš„å˜é‡d
+*      typedef double d; è½¬æ¢åæ„æ€æ˜¯ç»™doubleè¿™ä¸ªæ•°æ®ç±»å‹èµ·äº†ä¸€ä¸ªåˆ«å,ç›¸å½“äºæŠŠdç”±ä¸€ä¸ªå˜é‡è½¬æ¢æˆä¸ºäº†ä¸€ä¸ªç±»å‹
+*  3.typedefä¸æ˜¯ç±»ä¼¼äºå®å®šä¹‰çš„ç±»å‹æ›¿æ¢,åªæ˜¯ç»™æ˜¯ç±»å‹çš„é‡å‘½å,èµ·ä¸€ä¸ªåˆ«åè€Œå·²
+*  4.typedefå¸¸å’Œæšä¸¾å’Œç»“æ„ä½“ç»“åˆä½¿ç”¨
 */
 
-void TypeDefTest() {
-    //Õı³£¶¨Òå
+void TypeDefTest()
+{
+    //æ­£å¸¸å®šä¹‰
     double d;
     unsigned char x;
     unsigned short y;
     unsigned int z;
     int array[10];
 
-    //Ê¹ÓÃtypedefÆğ¼ò»¯±ğÃû
+    //ä½¿ç”¨typedefèµ·ç®€åŒ–åˆ«å
     typedef double td;
     typedef unsigned char tuc;
     typedef unsigned short tus;
     typedef unsigned int tui;
     typedef int Array[10];
 
-    //Ê¹ÓÃÊı¾İÀàĞÍµÄ¼ò»¯±ğÃû¶¨ÒåÊı¾İ
+    //ä½¿ç”¨æ•°æ®ç±»å‹çš„ç®€åŒ–åˆ«åå®šä¹‰æ•°æ®
     td d_;
     tuc x_;
     tus y_;
     tui z_;
-    //ÔÚÏÂÃæ´ò¶Ëµã,Ê¹ÓÃÊ¹ÓÃdebugÄ£Ê½²é¿´Êı¾İÀàĞÍ,¿ØÖÆÌ¨ÖĞ¿ÉÒÔÃ÷È·²é¿´µ½Êı¾İÀàĞÍÎªÊı×é
+    //åœ¨ä¸‹é¢æ‰“ç«¯ç‚¹,ä½¿ç”¨ä½¿ç”¨debugæ¨¡å¼æŸ¥çœ‹æ•°æ®ç±»å‹,æ§åˆ¶å°ä¸­å¯ä»¥æ˜ç¡®æŸ¥çœ‹åˆ°æ•°æ®ç±»å‹ä¸ºæ•°ç»„
     Array nums = { 1,2,3,4 };
     printf("double: sizeof(d)= %lld, sizeof(d_)= %lld\n", sizeof(d), sizeof(d_));
     printf("unsigned char: sizeof(x)= %lld, sizeof(x_)= %lld\n", sizeof(x), sizeof(x_));
@@ -39,9 +40,10 @@ void TypeDefTest() {
 }
 
 /**
- * typedefºÍ½á¹¹Ìå½áºÏÊ¹ÓÃ·½Ê½Ò»:
+ * typedefå’Œç»“æ„ä½“ç»“åˆä½¿ç”¨æ–¹å¼ä¸€:
  */
-struct Student {
+struct Student
+{
     char id[32];
     char name[20];
     int age;
@@ -50,32 +52,35 @@ typedef struct Student Student;
 typedef struct Student* PStudent;
 
 /**
- * typedefºÍ½á¹¹Ìå½áºÏÊ¹ÓÃ·½Ê½¶ş:
+ * typedefå’Œç»“æ„ä½“ç»“åˆä½¿ç”¨æ–¹å¼äºŒ:
  */
-typedef struct User {
+typedef struct User
+{
     char id[32];
     char name[20];
     int age;
 } User, *PUser;
 
 /**
- * ²âÊÔtypedefºÍ½á¹¹Ìå½áºÏÊ¹ÓÃ
+ * æµ‹è¯•typedefå’Œç»“æ„ä½“ç»“åˆä½¿ç”¨
  */
-void TypeDefWithStructTest() {
+void TypeDefWithStructTest()
+{
     /**
-     * ²âÊÔ typedefºÍ½á¹¹Ìå½áºÏÊ¹ÓÃ·½Ê½Ò»:
+     * æµ‹è¯• typedefå’Œç»“æ„ä½“ç»“åˆä½¿ç”¨æ–¹å¼ä¸€:
      */
     Student student;
     PStudent pStudent = &student;
 
     /**
-     * ²âÊÔ typedefºÍ½á¹¹Ìå½áºÏÊ¹ÓÃ·½Ê½¶ş:
+     * æµ‹è¯• typedefå’Œç»“æ„ä½“ç»“åˆä½¿ç”¨æ–¹å¼äºŒ:
      */
     User user;
     PUser pUser = &user;
 }
 
-int main() {
+int main()
+{
     //TypeDefTest();
     TypeDefWithStructTest();
 	return 0;

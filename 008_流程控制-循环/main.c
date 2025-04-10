@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 /*
- * CÓïÑÔÖĞµÄÈıÖÖÑ­»·:
+ * Cè¯­è¨€ä¸­çš„ä¸‰ç§å¾ªç¯:
  *  while
  *  do while
  *  for
  */
 
 /*
- * whileÑ­»·²âÊÔ
+ * whileå¾ªç¯æµ‹è¯•
  */
 void WhileLoopTest() {
     int i = 0;
     while (i < 10) {
         printf("%d\n", i);
-        //Èç¹ûÆÁ±ÎµôÏÂÃæÒ»ĞĞ,Ôò»áÊÇËÀÑ­»·
+        //å¦‚æœå±è”½æ‰ä¸‹é¢ä¸€è¡Œ,åˆ™ä¼šæ˜¯æ­»å¾ªç¯
         i++;
     }
 }
 
 /*
- * do whileÑ­»·²âÊÔ
+ * do whileå¾ªç¯æµ‹è¯•
  */
 void DoWhileLoopTest() {
     int i = 0;
@@ -31,7 +31,7 @@ void DoWhileLoopTest() {
 }
 
 /*
- * forÑ­»·²âÊÔ
+ * forå¾ªç¯æµ‹è¯•
  */
 void ForLoopTest() {
     int i;

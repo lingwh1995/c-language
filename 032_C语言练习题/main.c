@@ -4,29 +4,32 @@
 #include <stdbool.h>
 
  /**
-  * ·µ»Ø×î´óÖµ
+  * è¿”å›æœ€å¤§å€¼
   * @param a
   * @param b
   * @return max
   */
-int GetMax(int a, int b) {
+int GetMax(int a, int b)
+{
     return a > b ? a : b;
 }
 
 
 /**
- * ÊäÈëa¡¢b¡¢cÈı¸öÊı,Êä³ö×î´óÖµ
+ * è¾“å…¥aã€bã€cä¸‰ä¸ªæ•°,è¾“å‡ºæœ€å¤§å€¼
  */
-void Exercise1() {
+void Exercise1()
+{
     int a = 0, b = 0, c = 0;
-    printf("ÇëÊäÈë:\n");
+    printf("è¯·è¾“å…¥:\n");
     scanf("%d %d %d", &a, &b, &c);
-    //º¯ÊıµÄ¶à´ÎÁ¬Ğøµ÷ÓÃ,Õâ¸öÒ²ÊÇÒ»ÖÖ±à³ÌË¼Ë¼Ïë,¾ÍÊÇ°ÑÎÊÌâ·Ö¿ª½â¾ö,¶ø²»ÊÇÔÚÒ»¸öº¯ÊıÖĞ°ÑËùÓĞµÄÎÊÌâ¶¼½â¾ö
+    //å‡½æ•°çš„å¤šæ¬¡è¿ç»­è°ƒç”¨,è¿™ä¸ªä¹Ÿæ˜¯ä¸€ç§ç¼–ç¨‹æ€æ€æƒ³,å°±æ˜¯æŠŠé—®é¢˜åˆ†å¼€è§£å†³,è€Œä¸æ˜¯åœ¨ä¸€ä¸ªå‡½æ•°ä¸­æŠŠæ‰€æœ‰çš„é—®é¢˜éƒ½è§£å†³
     int max = GetMax(GetMax(a, b), c);
-    printf("a,b,cÖĞ×î´óÖµÊÇ: %d\n", max);
+    printf("a,b,cä¸­æœ€å¤§å€¼æ˜¯: %d\n", max);
 }
 
-void Swap(int* a, int* b) {
+void Swap(int* a, int* b)
+{
     int t = *a;
     *a = *b;
     *b = t;
@@ -34,12 +37,13 @@ void Swap(int* a, int* b) {
 
 
 /**
- * Çóa,b,cÈı¸öÊıÖĞ¼äµÄÊı
- *      ÒıÈëswap()º¯ÊıÊµÏÖ,Õ¼ÓÃµÄ¿Õ¼ä¸´ÔÓ¶È½Ï´ó
+ * æ±‚a,b,cä¸‰ä¸ªæ•°ä¸­é—´çš„æ•°
+ *      å¼•å…¥swap()å‡½æ•°å®ç°,å ç”¨çš„ç©ºé—´å¤æ‚åº¦è¾ƒå¤§
  */
-void Exercise2() {
+void Exercise2()
+{
     int a = 0, b = 0, c = 0;
-    printf("ÇëÊäÈë:\n");
+    printf("è¯·è¾“å…¥:\n");
     scanf("%d %d %d", &a, &b, &c);
     if (a > b) {
         Swap(&a, &b);
@@ -50,17 +54,18 @@ void Exercise2() {
     if (a > b) {
         Swap(&a, &b);
     }
-    printf("ÖĞÎ»ÊıÊÇ: %d\n", b);
+    printf("ä¸­ä½æ•°æ˜¯: %d\n", b);
 }
 
 
 /**
- * Çóa,b,cÈı¸öÊıÖĞ¼äµÄÊı
- *      ´¿Ëã·¨ÊµÏÖ,Õ¼ÓÃµÄ¿Õ¼ä¸´ÔÓ¶ÈĞ¡
+ * æ±‚a,b,cä¸‰ä¸ªæ•°ä¸­é—´çš„æ•°
+ *      çº¯ç®—æ³•å®ç°,å ç”¨çš„ç©ºé—´å¤æ‚åº¦å°
  */
-void Exercise3() {
+void Exercise3()
+{
     int a = 0, b = 0, c = 0;
-    printf("ÇëÊäÈë:\n");
+    printf("è¯·è¾“å…¥:\n");
     scanf("%d %d %d", &a, &b, &c);
     int mid = b;
     if (a > b) {
@@ -74,16 +79,19 @@ void Exercise3() {
             mid = a;
         }
     }
-    printf("ÖĞÎ»ÊıÊÇ: %d\n", mid);
+    printf("ä¸­ä½æ•°æ˜¯: %d\n", mid);
 }
 
 
 /**
- * ´òÓ¡99³Ë·¨±í
+ * æ‰“å°99ä¹˜æ³•è¡¨
  */
-void Exercise4() {
-    for (int i = 0; i <= 9; i++) {
-        for (int j = 1; j <= i; j++) {
+void Exercise4()
+{
+    for (int i = 0; i <= 9; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
             printf("%d*%d=%d\t", j, i, (j * i));
         }
         printf("\n");
@@ -92,14 +100,16 @@ void Exercise4() {
 
 
 /**
- * ÊäÈëÒ»¸öÊı×Ön,´òÓ¡1-nÖ®¼äËùÓĞµÄÅ¼ÊıµÄÆ½·½Öµ
+ * è¾“å…¥ä¸€ä¸ªæ•°å­—n,æ‰“å°1-nä¹‹é—´æ‰€æœ‰çš„å¶æ•°çš„å¹³æ–¹å€¼
  */
-void Exercise5() {
-    printf("ÇëÊäÈë:\n");
+void Exercise5()
+{
+    printf("è¯·è¾“å…¥:\n");
     int i = 2;
     int n = 0;
     scanf("%d", &n);
-    while (i * i < n) {
+    while (i * i < n)
+    {
         printf("%d\n", i * i);
         i = i + 2;
     }
@@ -107,80 +117,96 @@ void Exercise5() {
 
 
 /**
- * Ğ¡Çò´Ó100Ã×ÂäÏÂ,Ã¿´ÎÂäµØºóÌø»ØÔ­À´µÄ¸ß¶ÈÒ»°ë,ÔÙÂäÏÂ,ÇóËüÔÚµÚ10´ÎÂäÏÂÊ±¹²¾­¹ı¶àÉÙÃ×?·´µ¯¸ß¶ÈÊÇ¶àÉÙ?
+ * å°çƒä»100ç±³è½ä¸‹,æ¯æ¬¡è½åœ°åè·³å›åŸæ¥çš„é«˜åº¦ä¸€åŠ,å†è½ä¸‹,æ±‚å®ƒåœ¨ç¬¬10æ¬¡è½ä¸‹æ—¶å…±ç»è¿‡å¤šå°‘ç±³?åå¼¹é«˜åº¦æ˜¯å¤šå°‘?
  */
-void Exercise6() {
-    //ÏÂÂä¾­¹ıµÄ×Ü¸ß¶È
+void Exercise6()
+{
+    //ä¸‹è½ç»è¿‡çš„æ€»é«˜åº¦
     double sumHeight = 100.00;
-    //Ã¿Ò»´ÎµÄ·´µ¯¸ß¶È
+    //æ¯ä¸€æ¬¡çš„åå¼¹é«˜åº¦
     double currentJumpHeight = sumHeight / 2;
-    for (int i = 2; i <= 10; i++) {
+    for (int i = 2; i <= 10; i++)
+    {
         sumHeight = sumHeight + currentJumpHeight * 2;
         currentJumpHeight = currentJumpHeight / 2;
     }
-    printf("¾­¹ıµÄ×Ü¸ß¶È sumHeight = %f\n", sumHeight);
-    printf("µÚ10´Î·´µ¯¸ß¶È currentJumpHeight = %f\n", currentJumpHeight);
+    printf("ç»è¿‡çš„æ€»é«˜åº¦ sumHeight = %f\n", sumHeight);
+    printf("ç¬¬10æ¬¡åå¼¹é«˜åº¦ currentJumpHeight = %f\n", currentJumpHeight);
 }
 
 
 /**
- * ÓĞÒ»¶ÔÍÃ×Ó,´Ó³öÉúºóµÚÈı¸öÔÂÆğÃ¿¸öÔÂ¶¼ÉúÒ»¶ÔÍÃ×Ó,Ğ¡ÍÃ×Ó³¤µ½µÚÈı¸öÔÂºóÓÖÉúÒ»¶ÔÍÃ×Ó,¼ÙÈçÍÃ×Ó¶¼²»ËÀ,ÎÊÃ¿¸öÔÂÓĞ¶àÉÙ¶ÔÍÃ×Ó?
- * ÔÂ·İ     1       2       3       4       5       6       7       8
- * ¶ÔÊı     1       1       2       3       5       8       13      21
+ * æœ‰ä¸€å¯¹å…”å­,ä»å‡ºç”Ÿåç¬¬ä¸‰ä¸ªæœˆèµ·æ¯ä¸ªæœˆéƒ½ç”Ÿä¸€å¯¹å…”å­,å°å…”å­é•¿åˆ°ç¬¬ä¸‰ä¸ªæœˆååˆç”Ÿä¸€å¯¹å…”å­,å‡å¦‚å…”å­éƒ½ä¸æ­»,é—®æ¯ä¸ªæœˆæœ‰å¤šå°‘å¯¹å…”å­?
+ * æœˆä»½     1       2       3       4       5       6       7       8
+ * å¯¹æ•°     1       1       2       3       5       8       13      21
  */
- //µİ¹é½â¾öÎÊÌâ
-//int fun7(int n) {
+ //é€’å½’è§£å†³é—®é¢˜
+//int fun7(int n)
+// {
 //    if(n == 1 || n == 2) {
 //        return 1;
 //    }
 //    return fun7(n-1) + fun7(n-2);
 //}
-//·Çµİ¹é½â¾öÎÊÌâ
-int Exercise7(int n) {
-    //c´ú±íºóĞøÔÂ·İ
+//éé€’å½’è§£å†³é—®é¢˜
+int Exercise7(int n)
+{
+    //cä»£è¡¨åç»­æœˆä»½
     int a = 1, b = 1, c = 1;
-    for (int i = 3; i <= n; ++i) {
+    for (int i = 3; i <= n; ++i)
+    {
         c = a + b;
         a = b;
         b = c;
-        printf("µÚ%d¸öÔÂµÄÍÃ×Ó¶ÔÊı = %d\n", i, c);
+        printf("ç¬¬%dä¸ªæœˆçš„å…”å­å¯¹æ•° = %d\n", i, c);
     }
     return 0;
 }
 
 /**
- * Èç¹ûÒ»¸öÊıµÈÓÚËüµÄÒò×ÓÖ®ºÍ,ÔòÕâ¸öÊı³ÆÎªÍêÊı 6 = 1 + 2 + 3
+ * å¦‚æœä¸€ä¸ªæ•°ç­‰äºå®ƒçš„å› å­ä¹‹å’Œ,åˆ™è¿™ä¸ªæ•°ç§°ä¸ºå®Œæ•° 6 = 1 + 2 + 3
  */
- //Ö»´òÓ¡ÍêÊı
-void Exercise8() {
+ //åªæ‰“å°å®Œæ•°
+void Exercise8()
+{
     int n = 1000;
-    for (int i = 2; i <= n; i++) {
+    for (int i = 2; i <= n; i++)
+    {
         int sum = 1;
-        for (int j = 2; j < i; j++) {
-            if (i % j == 0) {
+        for (int j = 2; j < i; j++)
+        {
+            if (i % j == 0)
+            {
                 sum = sum + j;
             }
         }
-        if (sum == i) {
+        if (sum == i)
+        {
             printf("%d\n", i);
         }
     }
 }
 
-//´òÓ¡ÍêÊıºÍÒò×Ó
-void Exercise9() {
+//æ‰“å°å®Œæ•°å’Œå› å­
+void Exercise9()
+{
     int n = 1000;
-    for (int i = 2; i <= n; i++) {
+    for (int i = 2; i <= n; i++)
+    {
         int sum = 1;
-        for (int j = 2; j < i; j++) {
-            if (i % j == 0) {
+        for (int j = 2; j < i; j++)
+        {
+            if (i % j == 0)
+            {
                 sum = sum + j;
             }
         }
         if (sum == i) {
             printf("%d=>", i);
-            for (int x = 1; x < i; x++) {
-                if (i % x == 0) {
+            for (int x = 1; x < i; x++)
+            {
+                if (i % x == 0)
+                {
                     printf("%d ", x);
                 }
             }
@@ -191,149 +217,178 @@ void Exercise9() {
 
 
 /**
- * ¶à´ÎÊäÈëÄêÔÂÈÕ,Êä³ö×îÔçµÄÄêÔÂÈÕ
+ * å¤šæ¬¡è¾“å…¥å¹´æœˆæ—¥,è¾“å‡ºæœ€æ—©çš„å¹´æœˆæ—¥
  */
-void Exercise10() {
+void Exercise10()
+{
     int year, month, day, curyear, curmonth, curday;
-    printf("ÊäÈëÄêÔÂÈÕ£º\n");
+    printf("è¾“å…¥å¹´æœˆæ—¥ï¼š\n");
     scanf("%d/%d/%d", &year, &month, &day);
     curyear = year;
     curmonth = month;
     curday = day;
-    while (year != 0 || month != 0 || day != 0) {
-        if (year < curyear) {
+    while (year != 0 || month != 0 || day != 0)
+    {
+        if (year < curyear)
+        {
             curyear = year;
             curmonth = month;
             curday = day;
-        }
-        else if (year == curyear) {
-            if (month < curmonth) {
+        }else if (year == curyear)
+        {
+            if (month < curmonth)
+            {
                 curmonth = month;
                 curday = day;
-            }
-            else if (month == curmonth) {
+            }else if (month == curmonth)
+            {
                 if (day < curday)
                     curday = day;
             }
         }
         scanf("%d/%d/%d", &year, &month, &day);
     }
-    printf("×îĞ¡µÄÊÇÈÕÆÚÊÇ£º%d/%d/%d\n", curyear, curmonth, curday);
+    printf("æœ€å°çš„æ˜¯æ—¥æœŸæ˜¯ï¼š%d/%d/%d\n", curyear, curmonth, curday);
 }
 
 
 /**
- * ¶à´ÎÊäÈëÄêÔÂÈÕ,Êä³ö×îÔçµÄÄêÔÂÈÕ
+ * å¤šæ¬¡è¾“å…¥å¹´æœˆæ—¥,è¾“å‡ºæœ€æ—©çš„å¹´æœˆæ—¥
  */
-void Exercise11() {
-    printf("ÇëÊäÈëÈÕÆÚyyyy/mm/dd:\n");
+void Exercise11()
+{
+    printf("è¯·è¾“å…¥æ—¥æœŸyyyy/mm/dd:\n");
     int year, month, day, curyear, curmonth, curday;
     scanf("%d/%d/%d", &year, &month, &day);
     curyear = year;
     curmonth = month;
     curday = day;
-    while (year != 0 || month != 0 || day != 0) {
-        if (year < curyear) {
+    while (year != 0 || month != 0 || day != 0)
+    {
+        if (year < curyear)
+       {
             curyear = year;
             curmonth = month;
             curday = day;
         }
-        if (year == curyear && month < curmonth) {
+        if (year == curyear && month < curmonth)
+        {
             curmonth = month;
             curday = day;
         }
-        if (year == curyear && month == curmonth && day < curday) {
+        if (year == curyear && month == curmonth && day < curday)
+        {
             curday = day;
         }
         scanf("%d/%d/%d", &year, &month, &day);
     }
-    printf("×îĞ¡µÄÊÇÈÕÆÚÊÇ£º%d/%d/%d\n", curyear, curmonth, curday);
+    printf("æœ€å°çš„æ˜¯æ—¥æœŸæ˜¯ï¼š%d/%d/%d\n", curyear, curmonth, curday);
 }
 
 /**
- * ¶¨Òå´óĞ¡Îª100µÄÕûĞÎÊı×é,Ê¹ÓÃËæ»úº¯Êı¸øÊı×éÔªËØ¸³Öµ,ÊıÖµ·¶Î§1-100,Êı×éÖĞÔªËØ¿ÉÒÔÖØ¸´,²¢ÇÒÊ¹ÓÃÃ°ÅİÅÅĞò¶ÔÊı×éÔªËØ½øĞĞÅÅĞò
- *      Ã°ÅİÅÅĞòÆÕÍ¨°æ
+ * å®šä¹‰å¤§å°ä¸º100çš„æ•´å½¢æ•°ç»„,ä½¿ç”¨éšæœºå‡½æ•°ç»™æ•°ç»„å…ƒç´ èµ‹å€¼,æ•°å€¼èŒƒå›´1-100,æ•°ç»„ä¸­å…ƒç´ å¯ä»¥é‡å¤,å¹¶ä¸”ä½¿ç”¨å†’æ³¡æ’åºå¯¹æ•°ç»„å…ƒç´ è¿›è¡Œæ’åº
+ *      å†’æ³¡æ’åºæ™®é€šç‰ˆ
  */
-void Exercise12() {
+void Exercise12()
+{
     int nums[100] = { 0 };
     srand((unsigned)time(NULL));
     int length = 100;
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         nums[i] = rand() % 100 + 1;
     }
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (nums[j] > nums[j + 1]) {
+    for (int i = 0; i < length - 1; i++)
+    {
+        for (int j = 0; j < length - 1 - i; j++)
+        {
+            if (nums[j] > nums[j + 1])
+            {
                 nums[j] = nums[j] ^ nums[j + 1];
                 nums[j + 1] = nums[j] ^ nums[j + 1];
                 nums[j] = nums[j] ^ nums[j + 1];
             }
         }
     }
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", nums[i]);
     }
 }
 
 
 /**
- * ¶¨Òå´óĞ¡Îª100µÄÕûĞÎÊı×é,Ê¹ÓÃËæ»úº¯Êı¸øÊı×éÔªËØ¸³Öµ,ÊıÖµ·¶Î§1-100,Êı×éÖĞÔªËØ¿ÉÒÔÖØ¸´,²¢ÇÒÊ¹ÓÃÃ°ÅİÅÅĞò¶ÔÊı×éÔªËØ½øĞĞÅÅĞò
- *      Ã°ÅİÅÅĞòÓÅ»¯°æ
+ * å®šä¹‰å¤§å°ä¸º100çš„æ•´å½¢æ•°ç»„,ä½¿ç”¨éšæœºå‡½æ•°ç»™æ•°ç»„å…ƒç´ èµ‹å€¼,æ•°å€¼èŒƒå›´1-100,æ•°ç»„ä¸­å…ƒç´ å¯ä»¥é‡å¤,å¹¶ä¸”ä½¿ç”¨å†’æ³¡æ’åºå¯¹æ•°ç»„å…ƒç´ è¿›è¡Œæ’åº
+ *      å†’æ³¡æ’åºä¼˜åŒ–ç‰ˆ
  */
-void Exercise13() {
+void Exercise13()
+{
     int nums[100] = { 0 };
     srand((unsigned)time(NULL));
     int length = 100;
     for (int i = 0; i < length; i++) {
         nums[i] = rand() % 100 + 1;
     }
-    for (int i = 0; i < length - 1; i++) {
+    for (int i = 0; i < length - 1; i++)
+    {
         bool isExchange = false;
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (nums[j] > nums[j + 1]) {
+        for (int j = 0; j < length - 1 - i; j++)
+        {
+            if (nums[j] > nums[j + 1])
+            {
                 isExchange = true;
                 nums[j] = nums[j] ^ nums[j + 1];
                 nums[j + 1] = nums[j] ^ nums[j + 1];
                 nums[j] = nums[j] ^ nums[j + 1];
             }
         }
-        if (!isExchange) {
+        if (!isExchange)
+        {
             break;
         }
     }
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", nums[i]);
     }
 }
 
 
 /**
- * ¶¨Òå´óĞ¡Îª100µÄÕûĞÎÊı×é,Ê¹ÓÃËæ»úº¯Êı¸øÊı×éÔªËØ¸³Öµ,ÊıÖµ·¶Î§1-100,ÒªÇóÊı×éÖĞÔªËØ²»ÄÜÖØ¸´,²¢ÇÒÊ¹ÓÃÃ°ÅİÅÅĞò¶ÔÊı×éÔªËØ½øĞĞÅÅĞò
- *      Ã°ÅİÅÅĞòÓÅ»¯°æ
- *  ½â·¨1: forÑ­»·¼ÓÒ»Ğ©¼òµ¥µÄËã·¨
+ * å®šä¹‰å¤§å°ä¸º100çš„æ•´å½¢æ•°ç»„,ä½¿ç”¨éšæœºå‡½æ•°ç»™æ•°ç»„å…ƒç´ èµ‹å€¼,æ•°å€¼èŒƒå›´1-100,è¦æ±‚æ•°ç»„ä¸­å…ƒç´ ä¸èƒ½é‡å¤,å¹¶ä¸”ä½¿ç”¨å†’æ³¡æ’åºå¯¹æ•°ç»„å…ƒç´ è¿›è¡Œæ’åº
+ *      å†’æ³¡æ’åºä¼˜åŒ–ç‰ˆ
+ *  è§£æ³•1: forå¾ªç¯åŠ ä¸€äº›ç®€å•çš„ç®—æ³•
  */
-void Exercise14() {
+void Exercise14()
+{
     int nums[100] = { 0 };
     srand((unsigned)time(NULL));
     int length = 100;
-    for (int i = 0; i < length; i++) {
-        while (true) {
+    for (int i = 0; i < length; i++)
+    {
+        while (true)
+        {
             int r = rand() % 100 + 1;
             int j;
-            for (j = 0; j < i; ++j) {
-                if (nums[j] == r) {
+            for (j = 0; j < i; ++j)
+            {
+                if (nums[j] == r)
+                {
                     break;
                 }
             }
-            if (i == 0 || (j == i && nums[j - 1] != r)) {
+            if (i == 0 || (j == i && nums[j - 1] != r))
+            {
                 nums[i] = r;
                 break;
             }
         }
     }
-    //Ã°ÅİÅÅĞò
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
+    //å†’æ³¡æ’åº
+    for (int i = 0; i < length - 1; i++)
+    {
+        for (int j = 0; j < length - 1 - i; j++)
+        {
             if (nums[j] > nums[j + 1]) {
                 nums[j] = nums[j] ^ nums[j + 1];
                 nums[j + 1] = nums[j] ^ nums[j + 1];
@@ -341,21 +396,24 @@ void Exercise14() {
             }
         }
     }
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", nums[i]);
     }
 }
 
 /**
- * ²éÑ¯Êı×éÖĞÊÇ·ñÒÑ¾­ÓĞÄ³Ò»¸öÔªËØ
+ * æŸ¥è¯¢æ•°ç»„ä¸­æ˜¯å¦å·²ç»æœ‰æŸä¸€ä¸ªå…ƒç´ 
  * @param arr
  * @param i
  * @param value
  * @return
  */
-int FindValue(int arr[], int k, int value) {
+int FindValue(int arr[], int k, int value)
+{
     int position = -1;
-    for (int i = 0; i < k; i++) {
+    for (int i = 0; i < k; i++)
+    {
         if (arr[i] == value) {
             position = i;
             break;
@@ -366,35 +424,41 @@ int FindValue(int arr[], int k, int value) {
 
 
 /**
- * ¶¨Òå´óĞ¡Îª100µÄÕûĞÎÊı×é,Ê¹ÓÃËæ»úº¯Êı¸øÊı×éÔªËØ¸³Öµ,ÊıÖµ·¶Î§1-100,ÒªÇóÊı×éÖĞÔªËØ²»ÄÜÖØ¸´,²¢ÇÒÊ¹ÓÃÃ°ÅİÅÅĞò¶ÔÊı×éÔªËØ½øĞĞÅÅĞò
- *      Ã°ÅİÅÅĞòÓÅ»¯°æ
- *  ½â·¨2: forÑ­»·ÅäºÏi--
+ * å®šä¹‰å¤§å°ä¸º100çš„æ•´å½¢æ•°ç»„,ä½¿ç”¨éšæœºå‡½æ•°ç»™æ•°ç»„å…ƒç´ èµ‹å€¼,æ•°å€¼èŒƒå›´1-100,è¦æ±‚æ•°ç»„ä¸­å…ƒç´ ä¸èƒ½é‡å¤,å¹¶ä¸”ä½¿ç”¨å†’æ³¡æ’åºå¯¹æ•°ç»„å…ƒç´ è¿›è¡Œæ’åº
+ *      å†’æ³¡æ’åºä¼˜åŒ–ç‰ˆ
+ *  è§£æ³•2: forå¾ªç¯é…åˆi--
  */
-void Exercise14() {
+void Exercise14()
+{
     int nums[100] = { 0 };
     srand((unsigned)time(NULL));
     int length = 100;
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         int r = rand() % 100 + 1;
-        if (FindValue(nums, i, r) == -1) {
+        if (FindValue(nums, i, r) == -1)
+        {
             nums[i] = r;
-        }
-        else {
-            //Èç¹ûFindValue()·µ»ØÖµ²»Îª-1,ÔòËµÃ÷Êı×éÖĞÒÑ¾­ÓĞÒ»¸öÔªËØµÄÖµºÍrÏàµÈ,ÔòÈÃi--,ÕâÊÇºÜÇÉÃîµÄ´¦Àí·½·¨
+        }else {
+            //å¦‚æœFindValue()è¿”å›å€¼ä¸ä¸º-1,åˆ™è¯´æ˜æ•°ç»„ä¸­å·²ç»æœ‰ä¸€ä¸ªå…ƒç´ çš„å€¼å’Œrç›¸ç­‰,åˆ™è®©i--,è¿™æ˜¯å¾ˆå·§å¦™çš„å¤„ç†æ–¹æ³•
             i--;
         }
     }
-    //Ã°ÅİÅÅĞò
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (nums[j] > nums[j + 1]) {
+    //å†’æ³¡æ’åº
+    for (int i = 0; i < length - 1; i++)
+    {
+        for (int j = 0; j < length - 1 - i; j++)
+        {
+            if (nums[j] > nums[j + 1])
+            {
                 nums[j] = nums[j] ^ nums[j + 1];
                 nums[j + 1] = nums[j] ^ nums[j + 1];
                 nums[j] = nums[j] ^ nums[j + 1];
             }
         }
     }
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", nums[i]);
     }
 }
@@ -403,96 +467,114 @@ void Exercise14() {
 
 
 /**
- * ¶¨Òå´óĞ¡Îª100µÄÕûĞÎÊı×é,Ê¹ÓÃËæ»úº¯Êı¸øÊı×éÔªËØ¸³Öµ,ÊıÖµ·¶Î§1-100,ÒªÇóÊı×éÖĞÔªËØ²»ÄÜÖØ¸´,²¢ÇÒÊ¹ÓÃÃ°ÅİÅÅĞò¶ÔÊı×éÔªËØ½øĞĞÅÅĞò
- *      Ã°ÅİÅÅĞòÓÅ»¯°æ
- *  ½â·¨3: whileÑ­»·
- *      ÎªÊ²Ã´Ê¹ÓÃwhileÑ­»·?
- *      forÑ­»·ºÍforÑ­»·µÄÇø±ğ: whileÑ­»·½øÈëÏÂÒ»ÂÖÑ­»·µÄ¿ØÖÆÌõ¼şÊÇÈ«²¿Ğ´ÔÚ·½·¨ÌåÖĞ,
- *          forÑ­»·¿ØÖÆÏÂÒ»ÂÖÑ­»·µÄÌõ¼şÊÇÒ»²¿·ÖĞ´ÔÚforºóÃæ,ÁíÒ»²¿·ÖĞ´ÔÚ·½·¨ÌåÖĞµÄ,Ëù
- *          ÒÔwhile·Ç³£ÊÊºÏ´¦Àí¿ØÖÆÏÂÒ»ÂÖÊÇ·ñ¼ÌĞø½øĞĞ
+ * å®šä¹‰å¤§å°ä¸º100çš„æ•´å½¢æ•°ç»„,ä½¿ç”¨éšæœºå‡½æ•°ç»™æ•°ç»„å…ƒç´ èµ‹å€¼,æ•°å€¼èŒƒå›´1-100,è¦æ±‚æ•°ç»„ä¸­å…ƒç´ ä¸èƒ½é‡å¤,å¹¶ä¸”ä½¿ç”¨å†’æ³¡æ’åºå¯¹æ•°ç»„å…ƒç´ è¿›è¡Œæ’åº
+ *      å†’æ³¡æ’åºä¼˜åŒ–ç‰ˆ
+ *  è§£æ³•3: whileå¾ªç¯
+ *      ä¸ºä»€ä¹ˆä½¿ç”¨whileå¾ªç¯?
+ *      forå¾ªç¯å’Œforå¾ªç¯çš„åŒºåˆ«: whileå¾ªç¯è¿›å…¥ä¸‹ä¸€è½®å¾ªç¯çš„æ§åˆ¶æ¡ä»¶æ˜¯å…¨éƒ¨å†™åœ¨æ–¹æ³•ä½“ä¸­,
+ *          forå¾ªç¯æ§åˆ¶ä¸‹ä¸€è½®å¾ªç¯çš„æ¡ä»¶æ˜¯ä¸€éƒ¨åˆ†å†™åœ¨foråé¢,å¦ä¸€éƒ¨åˆ†å†™åœ¨æ–¹æ³•ä½“ä¸­çš„,æ‰€
+ *          ä»¥whileéå¸¸é€‚åˆå¤„ç†æ§åˆ¶ä¸‹ä¸€è½®æ˜¯å¦ç»§ç»­è¿›è¡Œ
  *
- *      forÑ­»·ÊµÏÖ´òÓ¡Å¼Êı·ÖÎö: ÓÉÓÚi++ ºÍ ·½·¨ÌåÖĞÂß¼­¹²Í¬×÷ÓÃ²ÅÄÜÊµÏÖ
- *      for(int i=0; i<100; i++) {
- *          if(i % 2 ==0) {
+ *      forå¾ªç¯å®ç°æ‰“å°å¶æ•°åˆ†æ: ç”±äºi++ å’Œ æ–¹æ³•ä½“ä¸­é€»è¾‘å…±åŒä½œç”¨æ‰èƒ½å®ç°
+ *      for(int i=0; i<100; i++)
+ *      {
+ *          if(i % 2 ==0)
+ *          {
  *              printf("%d\n", i);
  *          }
  *      }
  *
- *      whileÑ­»·ÊµÏÖ´òÓ¡Å¼Êı·ÖÎö: Ö»¿ØÖÆ·½·¨ÌåÖĞi++Ö´ĞĞ ¾Í¿ÉÒÔÊµÏÖ
+ *      whileå¾ªç¯å®ç°æ‰“å°å¶æ•°åˆ†æ: åªæ§åˆ¶æ–¹æ³•ä½“ä¸­i++æ‰§è¡Œ å°±å¯ä»¥å®ç°
  *      int i = 0;
- *      while(i<100) {
+ *      while(i<100)
+ *      {
  *          printf("%d\n", i);
  *          i = i+2;
  *      }
  *
  */
-void Exercise15() {
+void Exercise15()
+{
     int nums[100] = { 0 };
     srand((unsigned)time(NULL));
     int length = 100;
     int i = 0;
-    while (i < 100) {
+    while (i < 100)
+    {
         int r = rand() % 100 + 1;
-        if (FindValue(nums, i, r) == -1) {
+        if (FindValue(nums, i, r) == -1)
+        {
             nums[i] = r;
             i = i + 1;
         }
     }
-    //Ã°ÅİÅÅĞò
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (nums[j] > nums[j + 1]) {
+    //å†’æ³¡æ’åº
+    for (int i = 0; i < length - 1; i++)
+    {
+        for (int j = 0; j < length - 1 - i; j++)
+        {
+            if (nums[j] > nums[j + 1])
+            {
                 nums[j] = nums[j] ^ nums[j + 1];
                 nums[j + 1] = nums[j] ^ nums[j + 1];
                 nums[j] = nums[j] ^ nums[j + 1];
             }
         }
     }
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", nums[i]);
     }
 }
 
 
 /**
- * ¶¨Òå´óĞ¡Îª100µÄÕûĞÎÊı×é,Ê¹ÓÃËæ»úº¯Êı¸øÊı×éÔªËØ¸³Öµ,ÊıÖµ·¶Î§1-100,ÒªÇóÊı×éÖĞÔªËØ²»ÄÜÖØ¸´,²¢ÇÒÊ¹ÓÃÃ°ÅİÅÅĞò¶ÔÊı×éÔªËØ½øĞĞÅÅĞò
- *      Ã°ÅİÅÅĞòÆÕÍ¨°æ
- *  ½â·¨4: ´´½¨Ò»¸öĞÂµÄÊı×é,ĞÂÊı×éµÄÏÂ±êÖµ¾ÍÊÇnumsÊı×éÖĞµÄÔªËØµÄÖµ
+ * å®šä¹‰å¤§å°ä¸º100çš„æ•´å½¢æ•°ç»„,ä½¿ç”¨éšæœºå‡½æ•°ç»™æ•°ç»„å…ƒç´ èµ‹å€¼,æ•°å€¼èŒƒå›´1-100,è¦æ±‚æ•°ç»„ä¸­å…ƒç´ ä¸èƒ½é‡å¤,å¹¶ä¸”ä½¿ç”¨å†’æ³¡æ’åºå¯¹æ•°ç»„å…ƒç´ è¿›è¡Œæ’åº
+ *      å†’æ³¡æ’åºæ™®é€šç‰ˆ
+ *  è§£æ³•4: åˆ›å»ºä¸€ä¸ªæ–°çš„æ•°ç»„,æ–°æ•°ç»„çš„ä¸‹æ ‡å€¼å°±æ˜¯numsæ•°ç»„ä¸­çš„å…ƒç´ çš„å€¼
  */
-void Exercise16() {
+void Exercise16()
+{
     int nums[100] = { 0 };
-    //ÏÈ³õÊ¼»¯Ò»¸öÊı×é,ËùÓĞÔªËØ³õÊ¼»¯Îª0
+    //å…ˆåˆå§‹åŒ–ä¸€ä¸ªæ•°ç»„,æ‰€æœ‰å…ƒç´ åˆå§‹åŒ–ä¸º0
     int arr_temp[100 + 1] = { 0 };
     srand((unsigned)time(NULL));
     int length = 100;
     int i = 0;
     int count = 0;
-    while (i < 100) {
+    while (i < 100)
+    {
         count++;
         int r = rand() % 100 + 1;
-        if (arr_temp[r] == 0) {
+        if (arr_temp[r] == 0)
+        {
             nums[i] = r;
             i++;
             arr_temp[r] = 1;
         }
     }
-    printf("whileÑ­»·Ö´ĞĞ´ÎÊı: %d\n", count);
-    //Ã°ÅİÅÅĞò
-    for (int i = 0; i < length - 1; i++) {
-        for (int j = 0; j < length - 1 - i; j++) {
-            if (nums[j] > nums[j + 1]) {
+    printf("whileå¾ªç¯æ‰§è¡Œæ¬¡æ•°: %d\n", count);
+    //å†’æ³¡æ’åº
+    for (int i = 0; i < length - 1; i++)
+    {
+        for (int j = 0; j < length - 1 - i; j++)
+        {
+            if (nums[j] > nums[j + 1])
+            {
                 nums[j] = nums[j] ^ nums[j + 1];
                 nums[j + 1] = nums[j] ^ nums[j + 1];
                 nums[j] = nums[j] ^ nums[j + 1];
             }
         }
     }
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", nums[i]);
     }
 }
 
-int main() {
+int main()
+{
     //Exercise1();
     //Exercise2();
     //Exercise3();

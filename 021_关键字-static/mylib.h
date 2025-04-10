@@ -1,16 +1,16 @@
 #ifndef MYLIB_H
 #define MYLIB_H
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸ö±»staticĞŞÊÎµÄÈ«¾Ö±äÁ¿
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªè¢«staticä¿®é¥°çš„å…¨å±€å˜é‡
 extern int gi_in_other_file_static;
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸ö±»staticĞŞÊÎµÄÈ«¾Ö³£Á¿
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªè¢«staticä¿®é¥°çš„å…¨å±€å¸¸é‡
 extern const int gc_in_other_file_static;
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸ö±»staticĞŞÊÎµÄ·½·¨
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªè¢«staticä¿®é¥°çš„æ–¹æ³•
 extern int AddInOtherFileStatic(int, int);
 
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸öÃ»ÓĞ±»staticĞŞÊÎµÄÈ«¾Ö±äÁ¿
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªæ²¡æœ‰è¢«staticä¿®é¥°çš„å…¨å±€å˜é‡
 extern int gi_in_other_file_ordinary;
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸öÃ»ÓĞ±»staticĞŞÊÎµÄÈ«¾Ö³£Á¿
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªæ²¡æœ‰è¢«staticä¿®é¥°çš„å…¨å±€å¸¸é‡
 extern const int gc_in_other_file_ordinary;
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸öÃ»ÓĞ±»staticĞŞÊÎµÄ·½·¨
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªæ²¡æœ‰è¢«staticä¿®é¥°çš„æ–¹æ³•
 extern int AddInOtherFileOrdinary(int, int);
 #endif // !MYLIB_H

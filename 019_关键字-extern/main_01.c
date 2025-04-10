@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-//ÔÚÈ«¾ÖÎ»ÖÃ´¦ÉùÃ÷
+//åœ¨å…¨å±€ä½ç½®å¤„å£°æ˜
 int gi_1;
 extern int gi_2;
 
-int main() {
-	//ÔÚ¾Ö²¿Î»ÖÃ³öÉùÃ÷
+int main()
+{
+	//åœ¨å±€éƒ¨ä½ç½®å‡ºå£°æ˜
 	extern int gi_3;
 
 	printf("gi_1 = %d\n", gi_1);

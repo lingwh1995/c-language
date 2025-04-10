@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /*
- * ¶à·ÖÖ§²âÊÔ
- *  Ö»ÄÜÆ¥Åä´óĞ´×ÖÄ¸
+ * å¤šåˆ†æ”¯æµ‹è¯•
+ *  åªèƒ½åŒ¹é…å¤§å†™å­—æ¯
  */
-void MultipleBranchTest1() {
+void MultipleBranchTest1()
+{
     printf("please input grade (A B C D E F)\n");
     char grade = getchar();
     switch (grade) {
@@ -25,17 +26,18 @@ void MultipleBranchTest1() {
         printf("score: 0 - 20\n");
         break;
     default:
-        printf("ÊäÈëÊı¾İ²»ºÏ·¨.....\n");
+        printf("è¾“å…¥æ•°æ®ä¸åˆæ³•.....\n");
         break;
     }
 }
 
 /*
- * ¶à·ÖÖ§²âÊÔ
- *  Æ¥Åä´óĞ¡Ğ´×ÖÄ¸
+ * å¤šåˆ†æ”¯æµ‹è¯•
+ *  åŒ¹é…å¤§å°å†™å­—æ¯
  */
-void MultipleBranchTest2() {
-    printf("please input grade (A B C D E F »ò a b c d e)\n");
+void MultipleBranchTest2()
+{
+    printf("please input grade (A B C D E F æˆ– a b c d e)\n");
     char grade = getchar();
     switch (grade) {
     case 'A':
@@ -59,16 +61,17 @@ void MultipleBranchTest2() {
         printf("score: 0 - 20\n");
         break;
     default:
-        printf("ÊäÈëÊı¾İ²»ºÏ·¨.....\n");
+        printf("è¾“å…¥æ•°æ®ä¸åˆæ³•.....\n");
         break;
     }
 }
 
 /*
- * ¶à·ÖÖ§²âÊÔ
- *  switchµÄÇ¶Ì×Ê¹ÓÃ
+ * å¤šåˆ†æ”¯æµ‹è¯•
+ *  switchçš„åµŒå¥—ä½¿ç”¨
  */
-void MultipleBranchTest3() {
+void MultipleBranchTest3()
+{
     int a = 1;
     int b = 0;
     switch (a) {
@@ -94,7 +97,8 @@ void MultipleBranchTest3() {
     }
 }
 
-int main() {
+int main()
+{
     //MultipleBranchTest1();
     //MultipleBranchTest2();
     MultipleBranchTest3();

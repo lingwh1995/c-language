@@ -1,10 +1,11 @@
 /*
- * constºÍstaticÅäºÏÊ¹ÓÃ
+ * constå’Œstaticé…åˆä½¿ç”¨
  */
 
 #if 0
-int main() {
-	//constºÍstaticÅäºÏÊ¹ÓÃÊ±,²»¹ÜË­ÔÚÇ°Ãæ¶¼¿ÉÒÔ
+int main()
+{
+	//constå’Œstaticé…åˆä½¿ç”¨æ—¶,ä¸ç®¡è°åœ¨å‰é¢éƒ½å¯ä»¥
 	static const int i = 10;
 	const static int j = 10;
 	return 0;

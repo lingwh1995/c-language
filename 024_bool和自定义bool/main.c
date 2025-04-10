@@ -2,52 +2,54 @@
 #include <stdbool.h>
 
 /**
- * boolÀàĞÍ
- *  1.ÔÚCÓïÑÔÖĞ,0Îª¼Ù,·Ç0¶¼ÎªÕæ,Ò»°ãÓÃ1À´´ú±ítrue
- *  2.printf²»ÄÜÖ±½ÓÊä³öbool,ĞèÒª×ª»»ÎªÕûĞÎÊä³ö
+ * boolç±»å‹
+ *  1.åœ¨Cè¯­è¨€ä¸­,0ä¸ºå‡,é0éƒ½ä¸ºçœŸ,ä¸€èˆ¬ç”¨1æ¥ä»£è¡¨true
+ *  2.printfä¸èƒ½ç›´æ¥è¾“å‡ºbool,éœ€è¦è½¬æ¢ä¸ºæ•´å½¢è¾“å‡º
  */
 
 
 /*
- * CÓïÑÔÖĞµÄÕæºÍ¼Ù
+ * Cè¯­è¨€ä¸­çš„çœŸå’Œå‡
  */
-void TrueAndFalseTest() {
-    //ÔÚCÓïÑÔÖĞ,0Îª¼Ù,·Ç0¶¼ÎªÕæ
+void TrueAndFalseTest()
+{
+    //åœ¨Cè¯­è¨€ä¸­,0ä¸ºå‡,é0éƒ½ä¸ºçœŸ
     int n = 0;
     while (n) {
-        printf("ÎªÕæ...\n");
+        printf("ä¸ºçœŸ...\n");
     }
 }
 
 /*
- * stdbool.h²âÊÔ
+ * stdbool.hæµ‹è¯•
  */
-void StdboolTest() {
-    //Èç¹ûÒªÊ¹ÓÃbool£¬ĞèÒªÒıÈë stdbool.h
+void StdboolTest()
+{
+    //å¦‚æœè¦ä½¿ç”¨boolï¼Œéœ€è¦å¼•å…¥ stdbool.h
     bool b = false;
     while (b) {
-        printf("ÎªÕæ...\n");
+        printf("ä¸ºçœŸ...\n");
     }
     printf("b = %d\n", b);
     b -= 1;
-    //ÏÂÃæÒ»ĞĞÊä³ö1£¬ÎªÊ²Ã´²»Êä³ö-1,ÒòÎª 0-1=-1 ,-1·Ç0ÊÇtrue,trueÖµÎª1
+    //ä¸‹é¢ä¸€è¡Œè¾“å‡º1ï¼Œä¸ºä»€ä¹ˆä¸è¾“å‡º-1,å› ä¸º 0-1=-1 ,-1é0æ˜¯true,trueå€¼ä¸º1
     printf("b = %d\n", b);
     b -= 1;
-    //ÉÏÃæµÃµ½µÄb=1, 1-1=0,ËùÒÔÊä³ö0
+    //ä¸Šé¢å¾—åˆ°çš„b=1, 1-1=0,æ‰€ä»¥è¾“å‡º0
     printf("b = %d\n", b);
     b -= 1;
-    //ÉÏÃæµÃµ½µÄb=0, 0-1=-1,-1·Ç0ÊÇtrue,trueÖµÎª1
-    //ÉÏÃæµÃµ½µÄb=1, 1-1=0,ËùÒÔÊä³ö0
+    //ä¸Šé¢å¾—åˆ°çš„b=0, 0-1=-1,-1é0æ˜¯true,trueå€¼ä¸º1
+    //ä¸Šé¢å¾—åˆ°çš„b=1, 1-1=0,æ‰€ä»¥è¾“å‡º0
     printf("b = %d\n", b);
 
-    //Ò»Ğ©²»ºÃÅĞ¶ÏÎªÕæ»¹ÊÇÎª¼ÙµÄÖµ
+    //ä¸€äº›ä¸å¥½åˆ¤æ–­ä¸ºçœŸè¿˜æ˜¯ä¸ºå‡çš„å€¼
     bool i = 0; //false
     bool j = '0'; //true
-    bool k = '\0'; //¿Õ×Ö·û,ASCIIÂëÎª0,false
+    bool k = '\0'; //ç©ºå­—ç¬¦,ASCIIç ä¸º0,false
     bool l = NULL; //false
-    bool m = ' '; //¿Õ¸ñ 32 true
+    bool m = ' '; //ç©ºæ ¼ 32 true
 
-    //Êä³öbool
+    //è¾“å‡ºbool
     bool x = false;
     bool y = true;
     printf("x = %d\n", x);
@@ -55,7 +57,8 @@ void StdboolTest() {
 }
 
 #if 0
-int main() {
+int main()
+{
     TrueAndFalseTest();
     StdboolTest();
     return 0;

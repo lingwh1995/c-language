@@ -38,7 +38,8 @@
 
 #if 0
 #endif
-int main() {
+int main()
+{
 	system("calc");
 	printf("hello world~\n");
 	printf("你好世界~\n");
@@ -48,7 +49,8 @@ int main() {
 
 
 #if 0
-int main() {
+int main()
+{
 	printf("Hello world!");
 	return 0;
 }

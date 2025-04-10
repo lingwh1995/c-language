@@ -1,48 +1,52 @@
 #include <stdio.h>
 
 /**
- * Êı×éÃû¾ÍÊÇÊı×éÊ×ÔªËØµØÖ·
+ * æ•°ç»„åå°±æ˜¯æ•°ç»„é¦–å…ƒç´ åœ°å€
  */
-void PointerAndArrayTest1() {
+void PointerAndArrayTest1()
+{
     int arr[5] = { 1,2,3,4,5 };
-    //Êı×éµÄµØÖ·
-    printf("Êı×éµÄµØÖ· = %p\n", &arr);
-    //Êı×éµÄÊ×ÔªËØµØÖ·
-    printf("Êı×éµÄÊ×ÔªËØµØÖ· = %p\n", &arr[0]);
+    //æ•°ç»„çš„åœ°å€
+    printf("æ•°ç»„çš„åœ°å€ = %p\n", &arr);
+    //æ•°ç»„çš„é¦–å…ƒç´ åœ°å€
+    printf("æ•°ç»„çš„é¦–å…ƒç´ åœ°å€ = %p\n", &arr[0]);
     int* p = &arr[0];
-    printf("Êı×éµÄÊ×ÔªËØµØÖ· = %p\n", p);
-    printf("Êı×éµÄÊ×ÔªËØ = %d\n", *p);
+    printf("æ•°ç»„çš„é¦–å…ƒç´ åœ°å€ = %p\n", p);
+    printf("æ•°ç»„çš„é¦–å…ƒç´  = %d\n", *p);
     p = p + 1;
-    printf("Êı×éµÄµÚ¶ş¸öÔªËØ = %d\n", *p);
+    printf("æ•°ç»„çš„ç¬¬äºŒä¸ªå…ƒç´  = %d\n", *p);
 
-    //ÏÂÃæµÄ´úÂë·Å¿ª»á±¨´í,Ô­ÒòÊÇ: Êı×éµÄµØÖ·ÖµÊÇÒ»¸ö³£Á¿,Èç¹ûÒª¸ø³£Á¿ÖØĞÂ¸³Öµ,ÊÇ²»ºÏ·¨µÄ
+    //ä¸‹é¢çš„ä»£ç æ”¾å¼€ä¼šæŠ¥é”™,åŸå› æ˜¯: æ•°ç»„çš„åœ°å€å€¼æ˜¯ä¸€ä¸ªå¸¸é‡,å¦‚æœè¦ç»™å¸¸é‡é‡æ–°èµ‹å€¼,æ˜¯ä¸åˆæ³•çš„
     //arr = arr + 1;
 }
 
 /*
- * ½âÒıÓÃ·ûºÅ*ºÍ[]µÄÓÅÏÈ¼¶
+ * è§£å¼•ç”¨ç¬¦å·*å’Œ[]çš„ä¼˜å…ˆçº§
  */
-void PointerAndArrayTest2() {
+void PointerAndArrayTest2()
+{
     int a = 1, b = 2, c = 3, d = 4;
-    //¶¨ÒåÒ»¸öÊı×éÖ¸Õë
+    //å®šä¹‰ä¸€ä¸ªæ•°ç»„æŒ‡é’ˆ
     int* arr[5] = { &a,&b,&c,&d };
-    //Ê¹ÓÃ*+±äÁ¿ÃûÎª±äÁ¿(Êı×éÖĞµÄÔªËØ)¸³Öµ,ÏÂÃæÁ½ÖÖĞ´·¨¶¼ÊÇ¿ÉÒÔµÄ
+    //ä½¿ç”¨*+å˜é‡åä¸ºå˜é‡(æ•°ç»„ä¸­çš„å…ƒç´ )èµ‹å€¼,ä¸‹é¢ä¸¤ç§å†™æ³•éƒ½æ˜¯å¯ä»¥çš„
     *(arr[0]) = 100;
     *arr[1] = 200;
     printf("%d,%d\n", *arr[0], *arr[1]);
 }
 
 /*
- * Ö¸ÕëµÄÔËËã
+ * æŒ‡é’ˆçš„è¿ç®—
  */
-void PointerAndArrayTest3() {
+void PointerAndArrayTest3()
+{
     int arr_1[5] = { 1,2,3,4,5 };
     int size_1 = sizeof(arr_1) / sizeof(arr_1[0]);
     //int* ip = &arr_1[0];
     int* ip = arr_1;
-    for (int i = 0; i < size_1; i++) {
+    for (int i = 0; i < size_1; i++)
+    {
         printf("arr_1[%d] = %d, ip = %p\n", i, *ip, ip);
-        //Ïàµ±ÓÚµØÖ·µÄÖµ+4(¸ö×Ö½Ú)
+        //ç›¸å½“äºåœ°å€çš„å€¼+4(ä¸ªå­—èŠ‚)
         ip = ip + 1;
     }
     printf("------------------------\n");
@@ -51,9 +55,10 @@ void PointerAndArrayTest3() {
     int size_2 = sizeof(arr_2) / sizeof(arr_2[0]);
     //double* dp = &arr_2[0];
     double* dp = arr_2;
-    for (int i = 0; i < size_2; i++) {
+    for (int i = 0; i < size_2; i++)
+    {
         printf("arr_2[%d] = %f, dp = %p\n", i, *dp, dp);
-        //Ïàµ±ÓÚµØÖ·µÄÖµ+8(¸ö×Ö½Ú)
+        //ç›¸å½“äºåœ°å€çš„å€¼+8(ä¸ªå­—èŠ‚)
         dp = dp + 1;
     }
     printf("------------------------\n");
@@ -62,73 +67,84 @@ void PointerAndArrayTest3() {
     int size_3 = sizeof(arr_3) / sizeof(arr_3[0]);
     //char* cp = &arr_3[0];
     char* cp = arr_3;
-    for (int i = 0; i < size_3; i++) {
+    for (int i = 0; i < size_3; i++)
+    {
         printf("arr_3[%d] = %c, cp = %p\n", i, *cp, cp);
-        //Ïàµ±ÓÚµØÖ·µÄÖµ+1(¸ö×Ö½Ú)
+        //ç›¸å½“äºåœ°å€çš„å€¼+1(ä¸ªå­—èŠ‚)
         cp = cp + 1;
     }
 }
 
 
 /**
- * ²âÊÔarr[i]ºÍi[arr]µÄÖ´ĞĞĞ§¹ûÊÇÏàÍ¬µÄ
- * arr[i]Ö®ËùÒÔÄÜÕıÈ·µÄÖ¸ÏòÄ³Ò»¸öÔªËØ,±¾ÖÊÉÏÊÇ±àÒëÆ÷°Ñ arr[i]·­Òë³ÉÁË *(arr+i)
- * arr[i]ºÍi[arr]¶¼¿ÉÒÔÕıÈ·µÄ´òÓ¡³öÊı×éÖĞµÄÔªËØµÄÔ­Òò?
- *  ÒòÎªÔÚ±àÒëÆ÷¿´À´,arr[i]µÈÍ¬ÓÚ *(arr+i), i[arr] µÈÍ¬ÓÚ *(i+arr),ËùÒÔËµÍ¨¹ıÏÂ±ê(arr[i])·ÃÎÊÊı×éµÄ·½Ê½Êµ¼ÊÉÏÊÇÍ¨¹ıÖ¸Õë·ÃÎÊÊı×é
+ * æµ‹è¯•arr[i]å’Œi[arr]çš„æ‰§è¡Œæ•ˆæœæ˜¯ç›¸åŒçš„
+ * arr[i]ä¹‹æ‰€ä»¥èƒ½æ­£ç¡®çš„æŒ‡å‘æŸä¸€ä¸ªå…ƒç´ ,æœ¬è´¨ä¸Šæ˜¯ç¼–è¯‘å™¨æŠŠ arr[i]ç¿»è¯‘æˆäº† *(arr+i)
+ * arr[i]å’Œi[arr]éƒ½å¯ä»¥æ­£ç¡®çš„æ‰“å°å‡ºæ•°ç»„ä¸­çš„å…ƒç´ çš„åŸå› ?
+ *  å› ä¸ºåœ¨ç¼–è¯‘å™¨çœ‹æ¥,arr[i]ç­‰åŒäº *(arr+i), i[arr] ç­‰åŒäº *(i+arr),æ‰€ä»¥è¯´é€šè¿‡ä¸‹æ ‡(arr[i])è®¿é—®æ•°ç»„çš„æ–¹å¼å®é™…ä¸Šæ˜¯é€šè¿‡æŒ‡é’ˆè®¿é—®æ•°ç»„
  */
-void PointerAndArrayTest4() {
+void PointerAndArrayTest4()
+{
     int arr[] = { 1,2,3,4,5 };
     int length = sizeof(arr) / sizeof(arr[0]);
-    for (int i = 0; i < length; i++) {
-        printf("Êı×éÀïÃæµÚ%d¸öÔªËØµÄµØÖ· = %p\n", i, (arr + i));
-        printf("Êı×éÀïÃæµÚ%d¸öÔªËØ = %d\n", i, arr[i]);
-        printf("Êı×éÀïÃæµÚ%d¸öÔªËØ = %d\n", i, i[arr]);
-        printf("Êı×éÀïÃæµÚ%d¸öÔªËØ = %d\n", i, *(arr + i));
+    for (int i = 0; i < length; i++)
+    {
+        printf("æ•°ç»„é‡Œé¢ç¬¬%dä¸ªå…ƒç´ çš„åœ°å€ = %p\n", i, (arr + i));
+        printf("æ•°ç»„é‡Œé¢ç¬¬%dä¸ªå…ƒç´  = %d\n", i, arr[i]);
+        printf("æ•°ç»„é‡Œé¢ç¬¬%dä¸ªå…ƒç´  = %d\n", i, i[arr]);
+        printf("æ•°ç»„é‡Œé¢ç¬¬%dä¸ªå…ƒç´  = %d\n", i, *(arr + i));
     }
 }
 
 
 /**
- * Êı×éÃûµÄº¬Òå
+ * æ•°ç»„åçš„å«ä¹‰
  */
-void PointerAndArrayTest5() {
+void PointerAndArrayTest5()
+{
     int arr[] = { 1,2,3,4,5 };
-    //ÔÚsizeof()±í´ïÊ½ÖĞ,Êı×éÃû´ú±íµÄÊÇÕû¸öÊı×éµÄÒâÒå,Õâ°üº¬ÁËÁ½¸öÒâÒå,¼´Êı×éµÄÀàĞÍ+Êı×éµÄ´óĞ¡
+    //åœ¨sizeof()è¡¨è¾¾å¼ä¸­,æ•°ç»„åä»£è¡¨çš„æ˜¯æ•´ä¸ªæ•°ç»„çš„æ„ä¹‰,è¿™åŒ…å«äº†ä¸¤ä¸ªæ„ä¹‰,å³æ•°ç»„çš„ç±»å‹+æ•°ç»„çš„å¤§å°
     int size = sizeof(arr);
-    //ÔÚsizeof()±í´ïÊ½³ıÍâµÄÆäËûµØ·½,Êı×éÃû¶¼´ú±íµÄÊÇÊı×éµÄÊ×ÔªËØµØÖ·Öµ
+    //åœ¨sizeof()è¡¨è¾¾å¼é™¤å¤–çš„å…¶ä»–åœ°æ–¹,æ•°ç»„åéƒ½ä»£è¡¨çš„æ˜¯æ•°ç»„çš„é¦–å…ƒç´ åœ°å€å€¼
     printf("size = %d\n", size);
     printf("&arr = %p\n", arr);
 }
 
 /**
- * Ê¹ÓÃÖ¸Õë·ÃÎÊÊı×éÔªËØ
+ * ä½¿ç”¨æŒ‡é’ˆè®¿é—®æ•°ç»„å…ƒç´ 
  */
-void PointerAndArrayTest6() {
+void PointerAndArrayTest6()
+{
     int arr[] = { 1,2,3,4,5 };
     int length = sizeof(arr) / sizeof(arr[0]);
     int* p = &arr;
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", arr[i]);
     }
     printf("---------------------\n");
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", p[i]);
     }
     printf("---------------------\n");
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%p\n", p + i);
     }
     printf("---------------------\n");
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", *(p + i));
     }
     printf("---------------------\n");
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("%d\n", *(arr + i));
     }
 }
 
-int main() {
+int main()
+{
     //PointerAndArrayTest1();
     //PointerAndArrayTest2();
     //PointerAndArrayTest3();

@@ -1,9 +1,9 @@
-//Ê¹ÓÃ¶àÎÄ¼ş½á¹¹(Ä£¿é»¯Éè¼Æ)±àĞ´¼ÆËãÆ÷³ÌĞò:º¯ÊıÊµÏÖ²¿·Ö
+//ä½¿ç”¨å¤šæ–‡ä»¶ç»“æ„(æ¨¡å—åŒ–è®¾è®¡)ç¼–å†™è®¡ç®—å™¨ç¨‹åº:å‡½æ•°å®ç°éƒ¨åˆ†
 #include <stdbool.h>
 #include <stdio.h>
 #include "calculator.h"
 
-//ÉùÃ÷±¾ÎÄ¼şÖĞµÄº¯Êı
+//å£°æ˜æœ¬æ–‡ä»¶ä¸­çš„å‡½æ•°
 int Add_Int(int a, int b);
 int Sub_Int(int a, int b);
 int Mul_Int(int a, int b);
@@ -11,10 +11,10 @@ int Div_Int(int a, int b);
 void Show(int a, int b, char op, int result);
 
 /*
- * ½øĞĞ¼ÆËãµÄ·½·¨,²»ÄÜÊ¹ÓÃstaticĞŞÊÎ,ÒòÎªÕâÊÇ±¾³ÌĞòÎ¨Ò»¶ÔÍâ±©Â¶µÄ½Ó¿Ú
- * @param a ¼ÆËã²ÎÊı1
- * @param b ¼ÆËã²ÎÊı2
- * @param op ÔËËã·û
+ * è¿›è¡Œè®¡ç®—çš„æ–¹æ³•,ä¸èƒ½ä½¿ç”¨staticä¿®é¥°,å› ä¸ºè¿™æ˜¯æœ¬ç¨‹åºå”¯ä¸€å¯¹å¤–æš´éœ²çš„æ¥å£
+ * @param a è®¡ç®—å‚æ•°1
+ * @param b è®¡ç®—å‚æ•°2
+ * @param op è¿ç®—ç¬¦
  */
 void Calc(int a, int b, char op) {
 	int result = 0;
@@ -49,9 +49,9 @@ void Calc(int a, int b, char op) {
 }
 
 /*
- * ¼Ó·¨£¬Èç¹û²»Ïë±»Íâ²¿µ÷ÓÃ,Ê¹ÓÃstaticĞŞÊÎ
- * @param a ¼ÆËã²ÎÊı1
- * @param b ¼ÆËã²ÎÊı2
+ * åŠ æ³•ï¼Œå¦‚æœä¸æƒ³è¢«å¤–éƒ¨è°ƒç”¨,ä½¿ç”¨staticä¿®é¥°
+ * @param a è®¡ç®—å‚æ•°1
+ * @param b è®¡ç®—å‚æ•°2
  */
  /*
  int Add_Int(int a, int b) {
@@ -63,9 +63,9 @@ static int Add_Int(int a, int b) {
 }
 
 /*
- * ¼õ·¨£¬Èç¹û²»Ïë±»Íâ²¿µ÷ÓÃ,Ê¹ÓÃstaticĞŞÊÎ
- * @param a ¼ÆËã²ÎÊı1
- * @param b ¼ÆËã²ÎÊı2
+ * å‡æ³•ï¼Œå¦‚æœä¸æƒ³è¢«å¤–éƒ¨è°ƒç”¨,ä½¿ç”¨staticä¿®é¥°
+ * @param a è®¡ç®—å‚æ•°1
+ * @param b è®¡ç®—å‚æ•°2
  */
  /*
  int Sub_Int(int a, int b) {
@@ -77,9 +77,9 @@ static int Sub_Int(int a, int b) {
 }
 
 /*
- * ³Ë·¨£¬Èç¹û²»Ïë±»Íâ²¿µ÷ÓÃ,Ê¹ÓÃstaticĞŞÊÎ
- * @param a ¼ÆËã²ÎÊı1
- * @param b ¼ÆËã²ÎÊı2
+ * ä¹˜æ³•ï¼Œå¦‚æœä¸æƒ³è¢«å¤–éƒ¨è°ƒç”¨,ä½¿ç”¨staticä¿®é¥°
+ * @param a è®¡ç®—å‚æ•°1
+ * @param b è®¡ç®—å‚æ•°2
  */
  /*
  int Mul_Int(int a, int b) {
@@ -91,9 +91,9 @@ static int Mul_Int(int a, int b) {
 }
 
 /*
- * ³ı·¨£¬Èç¹û²»Ïë±»Íâ²¿µ÷ÓÃ,Ê¹ÓÃstaticĞŞÊÎ
- * @param a ¼ÆËã²ÎÊı1
- * @param b ¼ÆËã²ÎÊı2
+ * é™¤æ³•ï¼Œå¦‚æœä¸æƒ³è¢«å¤–éƒ¨è°ƒç”¨,ä½¿ç”¨staticä¿®é¥°
+ * @param a è®¡ç®—å‚æ•°1
+ * @param b è®¡ç®—å‚æ•°2
  */
  /*
  int Div_Int(int a, int b) {
@@ -105,11 +105,11 @@ static int Div_Int(int a, int b) {
 }
 
 /*
- * ÏÔÊ¾½á¹û£¬Èç¹û²»Ïë±»Íâ²¿µ÷ÓÃ,Ê¹ÓÃstaticĞŞÊÎ
- * @param a ¼ÆËã²ÎÊı1
- * @param b ¼ÆËã²ÎÊı2
- * @param op ÔËËã·û
- * @param result ¼ÆËã½á¹û
+ * æ˜¾ç¤ºç»“æœï¼Œå¦‚æœä¸æƒ³è¢«å¤–éƒ¨è°ƒç”¨,ä½¿ç”¨staticä¿®é¥°
+ * @param a è®¡ç®—å‚æ•°1
+ * @param b è®¡ç®—å‚æ•°2
+ * @param op è¿ç®—ç¬¦
+ * @param result è®¡ç®—ç»“æœ
  */
  /*
  void Show(int a, int b, char op, int result) {

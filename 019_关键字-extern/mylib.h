@@ -1,9 +1,9 @@
 #ifndef MYLIB_H
 #define MYLIB_H
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸öÈ«¾Ö±äÁ¿
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªå…¨å±€å˜é‡
 extern int gi_in_other_file;
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸öÈ«¾Ö³£Á¿
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªå…¨å±€å¸¸é‡
 extern const int gc_in_other_file;
-//ÉùÃ÷ÆäËûÎÄ¼şÖĞµÄÒ»¸ö·½·¨
+//å£°æ˜å…¶ä»–æ–‡ä»¶ä¸­çš„ä¸€ä¸ªæ–¹æ³•
 extern int AddInOtherFile(int, int);
 #endif // !MYLIB_H

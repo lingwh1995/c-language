@@ -2,20 +2,20 @@
 #include <ctype.h>
 
 /**
- * ÕÂ½ÚÄÚÈİ:
- *      ¶à·ÖÖ§switch-caseÊµÏÖÓĞÏŞ×´Ì¬»ú
- *      ĞèÇó:
- *          Í³¼Æ ×Ö·û´® {" hello    c   lang  nice   "} ÖĞµ¥´ÊµÄ¸öÊı
+ * ç« èŠ‚å†…å®¹:
+ *      å¤šåˆ†æ”¯switch-caseå®ç°æœ‰é™çŠ¶æ€æœº
+ *      éœ€æ±‚:
+ *          ç»Ÿè®¡ å­—ç¬¦ä¸² {" hello    c   lang  nice   "} ä¸­å•è¯çš„ä¸ªæ•°
  *
  */
 
-//ºê¶¨ÒåÊµÏÖ×´Ì¬Âë
+//å®å®šä¹‰å®ç°çŠ¶æ€ç 
 # define BEGIN 0
 # define IN_WORD 1
 # define OUT_WORD 2
 # define END 3
 
-//Ã¶¾ÙÊµÏÖ×´Ì¬Âë(ÍÆ¼öÊ¹ÓÃ)
+//æšä¸¾å®ç°çŠ¶æ€ç (æ¨èä½¿ç”¨)
 /*
 enum state {
     BEGIN_ENUM,
@@ -27,15 +27,17 @@ enum state {
 
 
 /*
- * Í³¼Æµ¥´ÊÖĞ³öÏÖµÄËùÓĞ×ÖÄ¸
+ * ç»Ÿè®¡å•è¯ä¸­å‡ºç°çš„æ‰€æœ‰å­—æ¯
  */
-void FSM1(char str[]) {
+void FSM1(char str[])
+{
     int i = 0;
-    //¼ÇÂ¼µ¥´Ê¸öÊı
+    //è®°å½•å•è¯ä¸ªæ•°
     int sum_alpha = 0;
     int state = BEGIN;
-    //±éÀú×Ö·û´®µÄĞÂ·½Ê½: ÀûÓÃ×Ö·û´®×îºóÒ»¸ö×Ö·ûÊÇ \0 µÄÌØĞÔ
-    for (int i = 0; str[i] != '\0'; i++) {
+    //éå†å­—ç¬¦ä¸²çš„æ–°æ–¹å¼: åˆ©ç”¨å­—ç¬¦ä¸²æœ€åä¸€ä¸ªå­—ç¬¦æ˜¯ \0 çš„ç‰¹æ€§
+    for (int i = 0; str[i] != '\0'; i++)
+    {
         switch (state) {
         case BEGIN:
             if (isalpha(str[i])) {
@@ -58,7 +60,8 @@ void FSM1(char str[]) {
             break;
         }
     }
-    if (state == IN_WORD) {
+    if (state == IN_WORD)
+    {
         sum_alpha++;
         state = END;
     }
@@ -66,41 +69,46 @@ void FSM1(char str[]) {
 }
 
 /*
- * Í³¼Æµ¥´ÊÖĞ³öÏÖµÄËùÓĞ×ÖÄ¸ºÍ¿Õ¸ñ
+ * ç»Ÿè®¡å•è¯ä¸­å‡ºç°çš„æ‰€æœ‰å­—æ¯å’Œç©ºæ ¼
  */
-void FSM2(char str[]) {
+void FSM2(char str[])
+{
     int i = 0;
-    //¼ÇÂ¼µ¥´Ê¸öÊı
+    //è®°å½•å•è¯ä¸ªæ•°
     int sum_alpha = 0;
     int sum_space = 0;
     int state = BEGIN;
-    //±éÀú×Ö·û´®µÄĞÂ·½Ê½: ÀûÓÃ×Ö·û´®×îºóÒ»¸ö×Ö·ûÊÇ \0 µÄÌØĞÔ
-    for (int i = 0; str[i] != '\0'; i++) {
+    //éå†å­—ç¬¦ä¸²çš„æ–°æ–¹å¼: åˆ©ç”¨å­—ç¬¦ä¸²æœ€åä¸€ä¸ªå­—ç¬¦æ˜¯ \0 çš„ç‰¹æ€§
+    for (int i = 0; str[i] != '\0'; i++)
+    {
         switch (state) {
         case BEGIN:
-            if (isalpha(str[i])) {
+            if (isalpha(str[i]))
+            {
                 state = IN_WORD;
-            }
-            else {
+            }else {
                 state = OUT_WORD;
                 sum_space++;
             }
             break;
         case IN_WORD:
-            if (!isalpha(str[i])) {
+            if (!isalpha(str[i]))
+            {
                 sum_alpha++;
                 state = OUT_WORD;
             }
             break;
         case OUT_WORD:
-            if (isalpha(str[i])) {
+            if (isalpha(str[i]))
+            {
                 state = IN_WORD;
             }
             sum_space++;
             break;
         }
     }
-    if (state == IN_WORD) {
+    if (state == IN_WORD)
+    {
         sum_alpha++;
         state = END;
     }
@@ -108,7 +116,8 @@ void FSM2(char str[]) {
     printf("sum_space = %d\n", sum_space);
 }
 
-int main() {
+int main()
+{
     char str[] = { " hello  c   lang    nice     " };
     //FSM1(str);
     FSM2(str);

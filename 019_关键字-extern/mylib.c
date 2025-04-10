@@ -1,13 +1,14 @@
 #include "mylib.h"
 
-//¶¨ÒåÒ»¸öÈ«¾Ö±äÁ¿
+//å®šä¹‰ä¸€ä¸ªå…¨å±€å˜é‡
 int gi_in_other_file = 10;
 
-//¶¨ÒåÒ»¸öÈ«¾Ö³£Á¿
+//å®šä¹‰ä¸€ä¸ªå…¨å±€å¸¸é‡
 const int gc_in_other_file = 100;
 
-//¶¨ÒåÒ»¸öº¯Êı
-int AddInOtherFile(int a, int b) {
-    printf("ÎÒÊÇmylib.cÖĞµÄÆÕÍ¨º¯Êı......(À´×ÔÆäËûÎÄ¼ş)\n");
+//å®šä¹‰ä¸€ä¸ªå‡½æ•°
+int AddInOtherFile(int a, int b)
+{
+    printf("æˆ‘æ˜¯mylib.cä¸­çš„æ™®é€šå‡½æ•°......(æ¥è‡ªå…¶ä»–æ–‡ä»¶)\n");
     return a + b;
 }

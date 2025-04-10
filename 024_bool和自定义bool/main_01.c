@@ -4,13 +4,14 @@ typedef char bool;
 #define true 1
 
 /*
- * Ê¹ÓÃºê¶¨Òå+typedefÊµÏÖ×Ô¶¨Òåbool
+ * ä½¿ç”¨å®å®šä¹‰+typedefå®ç°è‡ªå®šä¹‰bool
  */
 #if 0
-int main() {
+int main()
+{
     bool b = true;
     while (b) {
-        printf("ÎªÕæ...\n");
+        printf("ä¸ºçœŸ...\n");
     }
     return 0;
 }

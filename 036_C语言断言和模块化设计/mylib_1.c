@@ -3,30 +3,33 @@
 #include <assert.h>
 
 /*
- * ³õÊ¼»¯Êı×é
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * åˆå§‹åŒ–æ•°ç»„
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
-void InitArrV2(int* arr, int length) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void InitArrV2(int* arr, int length)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == arr || length < 1) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != arr && length >= 1);
 	srand((unsigned)time(NULL));
-	for (int i = 0; i < length; i++) {
+	for (int i = 0; i < length; i++)
+	{
 		arr[i] = rand() % 100 + 1;
 	}
 }
 
 /*
- * ½»»»Á½¸öÊı
- * @param *ap ´ú±íµÚÒ»¸öÊıµÄÖ¸Õë
- * @param *bp ´ú±íµÚ¶ş¸öÊıµÄÖ¸Õë
+ * äº¤æ¢ä¸¤ä¸ªæ•°
+ * @param *ap ä»£è¡¨ç¬¬ä¸€ä¸ªæ•°çš„æŒ‡é’ˆ
+ * @param *bp ä»£è¡¨ç¬¬äºŒä¸ªæ•°çš„æŒ‡é’ˆ
  */
-void SwapV2(int* ap, int* bp) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void SwapV2(int* ap, int* bp)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == ap || NULL == bp) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != ap && NULL != bp);
 	int temp = *ap;
 	*ap = *bp;
@@ -34,18 +37,22 @@ void SwapV2(int* ap, int* bp) {
 }
 
 /*
- * Ã°ÅİÅÅĞò
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * å†’æ³¡æ’åº
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
-void BubbleSortV2(int* arr, int length) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void BubbleSortV2(int* arr, int length)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == arr || length < 1) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != arr && length >= 1);
-	for (int i = 0; i < length - 1; i++) {
-		for (int j = 0; j < length - 1 - i; j++) {
-			if (arr[j] > arr[j + 1]) {
+	for (int i = 0; i < length - 1; i++)
+	{
+		for (int j = 0; j < length - 1 - i; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
 				SwapV2(&arr[j], &arr[j + 1]);
 			}
 		}
@@ -53,16 +60,18 @@ void BubbleSortV2(int* arr, int length) {
 }
 
 /*
- * ´òÓ¡Êı×é
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * æ‰“å°æ•°ç»„
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
-void PrintArrV2(int* arr, int length) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void PrintArrV2(int* arr, int length)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == arr || length < 1) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != arr && length >= 1);
-	for (int i = 0; i < length; i++) {
+	for (int i = 0; i < length; i++)
+	{
 		printf("%d\n", arr[i]);
 	}
 }

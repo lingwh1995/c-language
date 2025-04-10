@@ -3,13 +3,14 @@
 #include <assert.h>
 
 /*
- * ´ÓÊı×éÖĞ²éÕÒµ±Ç°Öµ,²éÕÒµ½·µ»ØÊı×éË÷Òı,²éÕÒ²»µ½·µ»Ø-1
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param n µ±Ç°ÔªËØÔÚÄ¿±êÊı×éÖĞµÄË÷Òı
- * @param val ÒªÈ·¶¨ÊÇ·ñ´æÔÚÓÚµ±Ç°Êı×éÖĞµÄÖµ
+ * ä»æ•°ç»„ä¸­æŸ¥æ‰¾å½“å‰å€¼,æŸ¥æ‰¾åˆ°è¿”å›æ•°ç»„ç´¢å¼•,æŸ¥æ‰¾ä¸åˆ°è¿”å›-1
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param n å½“å‰å…ƒç´ åœ¨ç›®æ ‡æ•°ç»„ä¸­çš„ç´¢å¼•
+ * @param val è¦ç¡®å®šæ˜¯å¦å­˜åœ¨äºå½“å‰æ•°ç»„ä¸­çš„å€¼
  */
 /*
-int FindValueV3(const* arr, int n, int val) {
+int FindValueV3(const* arr, int n, int val)
+{
 	assert(NULL != arr);
 	if (n < 1) return -1;
 	int position = -1;
@@ -21,32 +22,37 @@ int FindValueV3(const* arr, int n, int val) {
 	return position;
 }
 */
-int FindValueV3(const* arr, int n, int val) {
+int FindValueV3(const* arr, int n, int val)
+{
 	assert(NULL != arr);
 	if (n < 1) return -1;
 	int position = n - 1;
-	while (position >= 0 && arr[position] != val) {
+	while (position >= 0 && arr[position] != val)
+	{
 		position--;
 	}
 	return position;
 }
 
 /*
- * ³õÊ¼»¯Êı×é
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * åˆå§‹åŒ–æ•°ç»„
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
-void InitArrV3(int* arr, int length) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void InitArrV3(int* arr, int length)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == arr || length < 1) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != arr && length >= 1);
 	srand((unsigned)time(NULL));
 	int i = 0;
-	while (i < 100) {
+	while (i < 100)
+	{
 		int r = rand() % 100 + 1;
 		int position = FindValueV3(arr, i, r);
-		if (position == -1) {
+		if (position == -1)
+		{
 			arr[i] = r;
 			i++;
 		}
@@ -54,14 +60,15 @@ void InitArrV3(int* arr, int length) {
 }
 
 /*
- * ½»»»Á½¸öÊı
- * @param *ap ´ú±íµÚÒ»¸öÊıµÄÖ¸Õë
- * @param *bp ´ú±íµÚ¶ş¸öÊıµÄÖ¸Õë
+ * äº¤æ¢ä¸¤ä¸ªæ•°
+ * @param *ap ä»£è¡¨ç¬¬ä¸€ä¸ªæ•°çš„æŒ‡é’ˆ
+ * @param *bp ä»£è¡¨ç¬¬äºŒä¸ªæ•°çš„æŒ‡é’ˆ
  */
-void SwapV3(int* ap, int* bp) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void SwapV3(int* ap, int* bp)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == ap || NULL == bp) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != ap && NULL != bp);
 	int temp = *ap;
 	*ap = *bp;
@@ -69,18 +76,22 @@ void SwapV3(int* ap, int* bp) {
 }
 
 /*
- * Ã°ÅİÅÅĞò
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * å†’æ³¡æ’åº
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
-void BubbleSortV3(int* arr, int length) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void BubbleSortV3(int* arr, int length)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == arr || length < 1) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != arr && length >= 1);
-	for (int i = 0; i < length - 1; i++) {
-		for (int j = 0; j < length - 1 - i; j++) {
-			if (arr[j] > arr[j + 1]) {
+	for (int i = 0; i < length - 1; i++)
+	{
+		for (int j = 0; j < length - 1 - i; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
 				SwapV3(&arr[j], &arr[j + 1]);
 			}
 		}
@@ -88,16 +99,18 @@ void BubbleSortV3(int* arr, int length) {
 }
 
 /*
- * ´òÓ¡Êı×é
- * @param *arr ´ú±íÊı×éµÄÖ¸Õë
- * @param length Êı×é³¤¶È
+ * æ‰“å°æ•°ç»„
+ * @param *arr ä»£è¡¨æ•°ç»„çš„æŒ‡é’ˆ
+ * @param length æ•°ç»„é•¿åº¦
  */
-void PrintArrV3(int* arr, int length) {
-	//Ê¹ÓÃ´«Í³if else ÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨
+void PrintArrV3(int* arr, int length)
+{
+	//ä½¿ç”¨ä¼ ç»Ÿif else åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•
 	//if (NULL == arr || length < 1) return;
-	//Ê¹ÓÃ¶ÏÑÔÅĞ¶Ï²ÎÊıÊÇ·ñºÏ·¨,±í´ïÊ½ÎªÕæ,¼ÌĞøÏòÏÂÖ´ĞĞ,±í´ïÊ½Îª¼Ù,µ¯³ö´°ÌáÊ¾
+	//ä½¿ç”¨æ–­è¨€åˆ¤æ–­å‚æ•°æ˜¯å¦åˆæ³•,è¡¨è¾¾å¼ä¸ºçœŸ,ç»§ç»­å‘ä¸‹æ‰§è¡Œ,è¡¨è¾¾å¼ä¸ºå‡,å¼¹å‡ºçª—æç¤º
 	assert(NULL != arr && length >= 1);
-	for (int i = 0; i < length; i++) {
+	for (int i = 0; i < length; i++)
+	{
 		printf("%d\n", arr[i]);
 	}
 }

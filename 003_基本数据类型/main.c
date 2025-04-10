@@ -10,7 +10,8 @@
  *          空类型(不属于基本数据类型): void
  */
 
-int main() {
+int main()
+{
     printf("char类型所占字节大小: %d\n", (int)sizeof(char));
     printf("short类型所占字节大小: %d\n", (int)sizeof(short));
     printf("int类型所占字节大小: %d\n", (int)sizeof(int));

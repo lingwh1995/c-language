@@ -3,18 +3,19 @@
 #include "calculator.h"
 
 
-//Ê¹ÓÃ¶àÎÄ¼ş½á¹¹(Ä£¿é»¯Éè¼Æ)±àĞ´¼ÆËãÆ÷³ÌĞò:²âÊÔ²¿·Ö
+//ä½¿ç”¨å¤šæ–‡ä»¶ç»“æ„(æ¨¡å—åŒ–è®¾è®¡)ç¼–å†™è®¡ç®—å™¨ç¨‹åº:æµ‹è¯•éƒ¨åˆ†
 int main()
 {
-	printf("ÇëÊäÈë±í´ïÊ½: a op b\n");
+	printf("è¯·è¾“å…¥è¡¨è¾¾å¼: a op b\n");
 	int a = 0, b = 0;
 	char op = '\0';
 	char ch = '\0';
-	do {
+	do
+	{
 		scanf("%d %c %d", &a, &op, &b); // 1 + 5\n
 		Calc(a, b, op);
-		printf("ÊäÈëy/Y¼ÌĞø:\n");
-		//Visual StudioÖĞ¿ÉÒÔÊ¹ÓÃÕâ¸öº¯ÊıÇå¿Õstdin»º³åÇø
+		printf("è¾“å…¥y/Yç»§ç»­:\n");
+		//Visual Studioä¸­å¯ä»¥ä½¿ç”¨è¿™ä¸ªå‡½æ•°æ¸…ç©ºstdinç¼“å†²åŒº
 		rewind(stdin);
 		ch = getchar();
 	} while (ch == 'y' || ch == 'Y');
@@ -22,7 +23,7 @@ int main()
 	return 0;
 }
 
-//Ö¸Õë
+//æŒ‡é’ˆ
 #if 0
 int main()
 {
@@ -35,7 +36,7 @@ int main()
 }
 #endif // 0
 
-//²âÊÔ¶àÎÄ¼ş½á¹¹
+//æµ‹è¯•å¤šæ–‡ä»¶ç»“æ„
 #if 0
 int main()
 {
@@ -44,4 +45,3 @@ int main()
 	return 0;
 }
 #endif // 0
-

@@ -1,19 +1,24 @@
 #include <stdio.h>
 
 /**
- * goto×îÓÐ¼ÛÖµÓ¦ÓÃ³¡¾°(×î¼ÑÓ¦ÓÃ³¡¾°):
- *  ´Ó×îÄÚ²ãÑ­»·Ìø×ªµ½×îÍâ²ãÑ­»·,¼´Ò»´ÎÐÔÌø×ªµ½¶à²ãÑ­»·×îÍâ²ã
+ * gotoæœ€æœ‰ä»·å€¼åº”ç”¨åœºæ™¯(æœ€ä½³åº”ç”¨åœºæ™¯):
+ *  ä»Žæœ€å†…å±‚å¾ªçŽ¯è·³è½¬åˆ°æœ€å¤–å±‚å¾ªçŽ¯,å³ä¸€æ¬¡æ€§è·³è½¬åˆ°å¤šå±‚å¾ªçŽ¯æœ€å¤–å±‚
  */
 
  /**
-  * goto²âÊÔ
+  * gotoæµ‹è¯•
   *      
   */
-void GoToTest() {
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {
-            for (int k = 0; k < 10; k++) {
-                if (k == 5) {
+void GoToTest()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            for (int k = 0; k < 10; k++)
+            {
+                if (k == 5)
+                {
                     printf("k = %d\n", k);
                     goto jump;
                 }
@@ -24,7 +29,8 @@ jump:
     printf("I am jump!");
 }
 
-int main() {
+int main()
+{
     GoToTest();
     return 0;
 }
