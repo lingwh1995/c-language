@@ -37,21 +37,21 @@
  */
 
 #if 0
-#endif
 int main()
 {
 	system("calc");
 	system("pause");
 	return 0;
 }
-
+#endif
 
 #if 0
+#endif
 int main()
 {
 	printf("hello world~\n");
 	printf("你好世界~\n");
 	return 0;
 }
-#endif
+
 
