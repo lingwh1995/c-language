@@ -17,10 +17,8 @@ pipeline {
       steps {
         echo '正在推送文件...'
         echo '${GIT_COMMIT_MSG}'
-        sh 'git fetch https://lingwh1995:${GITEE_TOKEN}@gitee.com/lingwh1995/c-language.git'
-        sh 'git push -f https://lingwh1995:${GITEE_TOKEN}@gitee.com/lingwh1995/c-language.git HEAD:master'
-        //sh 'git fetch https://lingwh1995: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@github.com/lingwh1995/springcloud-eureka.git'
-        //sh 'git push -f https://lingwh1995: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@github.com/lingwh1995/springcloud-eureka.git HEAD:master'
+        sh 'git fetch https://lingwh1995:${GITEE_TOKEN}@gitee.com/lingwh1995/c-language-visual_studio.git'
+        sh 'git push -f https://lingwh1995:${GITEE_TOKEN}@gitee.com/lingwh1995/c-language-visual_studio.git HEAD:master'
         echo '完成文件推送...'
       }
     }
