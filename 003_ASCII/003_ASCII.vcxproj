@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\think\Desktop\ascii码表.png" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\think\Desktop\main.c" />
+    <Image Include="C:\Users\think\Desktop\ascii码表.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
