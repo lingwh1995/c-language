@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\eclipse\personal\eclipse-cpp\c-language\003_ascii\src\main.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\eclipse\personal\eclipse-cpp\c-language\003_ascii\src\ascii码表.png">
+    <Image Include="C:\Users\think\Desktop\ascii码表.png">
       <Filter>源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\think\Desktop\main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

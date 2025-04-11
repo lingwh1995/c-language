@@ -18,10 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\think\Desktop\ascii码表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\think\Desktop\main.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5cc4a4d3-26f7-4f25-9642-7c1d557fba19}</ProjectGuid>
+    <ProjectGuid>{f697156d-a80c-4bc8-a292-c1aca689961a}</ProjectGuid>
     <RootNamespace>My003ASCII</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -126,12 +132,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\eclipse\personal\eclipse-cpp\c-language\003_ascii\src\main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\eclipse\personal\eclipse-cpp\c-language\003_ascii\src\ascii码表.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

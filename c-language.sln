@@ -7,9 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001_第一个C语言程序"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002_进制转换", "002_进制转换\002_进制转换.vcxproj", "{DF22D9BF-1A88-4080-A0C4-59C7980551EA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "006_基本数据类型", "003_基本数据类型\003_基本数据类型.vcxproj", "{AE52211E-CFA3-4E0E-A4CB-C4E66412B9A3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003_基本数据类型", "003_基本数据类型\003_基本数据类型.vcxproj", "{AE52211E-CFA3-4E0E-A4CB-C4E66412B9A3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "005_变量和常量、变量和常量的作用域", "004_变量和常量、变量和常量的作用域\004_变量和常量、变量和常量的作用域.vcxproj", "{7DF4401D-49BF-4487-8158-2A912B61A0A2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "004_变量和常量、变量和常量的作用域", "004_变量和常量、变量和常量的作用域\004_变量和常量、变量和常量的作用域.vcxproj", "{7DF4401D-49BF-4487-8158-2A912B61A0A2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "005_枚举常量的定义和使用", "005_枚举常量的定义和使用\005_枚举常量的定义和使用.vcxproj", "{E0ADE4C7-75F4-45B8-A8AF-5296C830A9D8}"
 EndProject
@@ -75,9 +75,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "035_C语言常用类库", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "037_C语言断言和模块化设计", "037_C语言断言和模块化设计\037_C语言断言和模块化设计.vcxproj", "{427F6AAF-1149-43EA-9E87-635BC8F0D5F7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003_ASCII", "003_ASCII\003_ASCII.vcxproj", "{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "004_原码反码补码", "004_原码反码补码\004_原码反码补码.vcxproj", "{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003_ASCII", "003_ASCII\003_ASCII.vcxproj", "{F697156D-A80C-4BC8-A292-C1ACA689961A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -375,14 +375,6 @@ Global
 		{427F6AAF-1149-43EA-9E87-635BC8F0D5F7}.Release|x64.Build.0 = Release|x64
 		{427F6AAF-1149-43EA-9E87-635BC8F0D5F7}.Release|x86.ActiveCfg = Release|Win32
 		{427F6AAF-1149-43EA-9E87-635BC8F0D5F7}.Release|x86.Build.0 = Release|Win32
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Debug|x64.ActiveCfg = Debug|x64
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Debug|x64.Build.0 = Debug|x64
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Debug|x86.ActiveCfg = Debug|Win32
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Debug|x86.Build.0 = Debug|Win32
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Release|x64.ActiveCfg = Release|x64
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Release|x64.Build.0 = Release|x64
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Release|x86.ActiveCfg = Release|Win32
-		{5CC4A4D3-26F7-4F25-9642-7C1D557FBA19}.Release|x86.Build.0 = Release|Win32
 		{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}.Debug|x64.ActiveCfg = Debug|x64
 		{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}.Debug|x64.Build.0 = Debug|x64
 		{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}.Debug|x86.ActiveCfg = Debug|Win32
@@ -391,6 +383,14 @@ Global
 		{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}.Release|x64.Build.0 = Release|x64
 		{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}.Release|x86.ActiveCfg = Release|Win32
 		{057E43DB-9A44-407C-B2CD-5FA1B30CBDBB}.Release|x86.Build.0 = Release|Win32
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Debug|x64.ActiveCfg = Debug|x64
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Debug|x64.Build.0 = Debug|x64
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Debug|x86.ActiveCfg = Debug|Win32
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Debug|x86.Build.0 = Debug|Win32
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Release|x64.ActiveCfg = Release|x64
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Release|x64.Build.0 = Release|x64
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Release|x86.ActiveCfg = Release|Win32
+		{F697156D-A80C-4BC8-A292-C1ACA689961A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
