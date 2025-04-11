@@ -41,8 +41,6 @@
 int main()
 {
 	system("calc");
-	printf("hello world~\n");
-	printf("你好世界~\n");
 	system("pause");
 	return 0;
 }
@@ -51,7 +49,8 @@ int main()
 #if 0
 int main()
 {
-	printf("Hello world!");
+	printf("hello world~\n");
+	printf("你好世界~\n");
 	return 0;
 }
 #endif
